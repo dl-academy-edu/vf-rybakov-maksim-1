@@ -8,7 +8,7 @@
 <body>
     <header class="header">
         <!--Комментарий от куратора:"Логотип сайта должен быть обернут в тег и вести на главную страницу", обернул в <а>-->
-        <a class="index-link" href="index.html"><img class="header-logo" src="logo.png" alt="dlk kompany logo"></a>
+        <a class="index-link" href="index.html"><img class="header-logo" src="/images/logo.png" alt="dlk kompany logo" width="100" height="52"></a>
         <nav class="header-nav">
             <ul class="header-nav-list">
                 <li class="header-nav-link"><a href="#">Blog</a></li>
@@ -64,7 +64,7 @@
     </section>
     <section class="services">
         <!--Коммент от куратора: "картинку нужно вставить", поэтому вставляю-->
-        <div class="left-service-block"><img class="service-picture" src="girl-in-dress.jpg" alt="a girl in a dress"></div>
+        <img class="service-picture" src="girl-in-dress.jpg" alt="a girl in a dress"/>
         <div class="rigt-service-block">
             <h2 class="service-title">Delivery</h2>
             <ul class="service-list">
@@ -102,39 +102,40 @@
     </section>
     </main>
     <footer class="footer">
-        <ul class="footer-column">
-            <li class="footer-column-title">
+        <ul class="footer-columns">
+            <li class="footer-column-navigation">
                 <!--Комментарий о куратора: "Заголовок здесь и далее должен быть вынесен из элемента списка на уровень выше", все перенес (эх и муторное это дело оказалось)-->
-                <h2 class="footer-title">Navigation</h2>
+                <h2 class="footer-column-title">Navigation</h2>
                 <!--Тут тегом размещал линию, но куратор прокомментировал так: "Эту линию нужно будет прописывать в стилях. Ее не должно быть в html. Здесь и в следующих элементах так же", поэтому код линии удалил-->
-                <ul class="footer-items">
-                    <li class="foter-item"><a class="footer-item-link" href="#">About Us</a></li>
-                    <li class="foter-item"><a class="footer-item-link" href="#">Blog</a></li>
-                    <li class="foter-item"><a class="footer-item-link" href="#">Design Services</a></li>
-                    <li class="foter-item"><a class="footer-item-link" href="#">Featured On</a></li>
-                    <li class="foter-item"><a class="footer-item-link" href="#">2018 Holiday Catalog</a></li>
-                    <li class="foter-item"><a class="footer-item-link" href="#">Shop By Designer</a></li>
+                <ul class="footer-column-items">
+                    <li class="foter-column-item"><a class="footer-item-link" href="#">About Us</a></li>
+                    <li class="foter-column-item"><a class="footer-item-link" href="#">Blog</a></li>
+                    <li class="foter-column-item"><a class="footer-item-link" href="#">Design Services</a></li>
+                    <li class="foter-column-item"><a class="footer-item-link" href="#">Featured On</a></li>
+                    <li class="foter-column-item"><a class="footer-item-link" href="#">2018 Holiday Catalog</a></li>
+                    <li class="foter-column-item"><a class="footer-item-link" href="#">Shop By Designer</a></li>
                 </ul>
             </li>
-            <li class="footer-column-title">
-                <h2 class="footer-title">Customer Information</h2>
-                <ul class="footer-items">
-                    <li class="foter-item"><a class="footer-item-link" href="#">Contact Us</a></li>
-                    <li class="foter-item"><a class="footer-item-link" href="#">Sale Exclusions</a></li>
-                    <li class="foter-item"><a class="footer-item-link" href="#">Shipping & Returns</a></li>
-                    <li class="foter-item"><a class="footer-item-link" href="#">Terms & Conditions</a></li>
-                    <li class="foter-item"><a class="footer-item-link" href="#">Privacy Policy</a></li>
-                    <li class="foter-item"><a class="footer-item-link" href="#">Search</a></li>
+            <li class="footer-column-information">
+                <h2 class="footer-column-title">Customer Information</h2>
+                <ul class="footer-column-items">
+                    <li class="foter-column-item"><a class="footer-item-link" href="#">Contact Us</a></li>
+                    <li class="foter-column-item"><a class="footer-item-link" href="#">Sale Exclusions</a></li>
+                    <li class="foter-column-item"><a class="footer-item-link" href="#">Shipping & Returns</a></li>
+                    <li class="foter-column-item"><a class="footer-item-link" href="#">Terms & Conditions</a></li>
+                    <li class="foter-column-item"><a class="footer-item-link" href="#">Privacy Policy</a></li>
+                    <li class="foter-column-item"><a class="footer-item-link" href="#">Search</a></li>
                 </ul>
             </li>
-            <li class="footer-column-title">
-                <h2 class="footer-title">Connect</h2>
+            <li class="footer-column-connect">
+                <h2 class="footer-column-title">Connect</h2>
                 <!--Комментарий от куратора:"тут не должно быть списка. в список объединяются однотипные элементы" (вероятно речь идет о форме и соц кнопках)-->
                 <!--Комментарий от куратора (по поводу формы ввода емейла): "добавь тег form и после тег button этого пока достаточно"-->
                 <form>
-                    <!--Где-то здесь надо будет позже добавить подсказку "Email" для формы ввода почты-->
+                    <!--Здесь надо будет позже добавить подсказку "Email" для формы ввода почты-->
+                    <input  type="text" name="email">
+                    <button class="button-subscribe" type="button">Join</button>
                 </form>
-                <button class="button-subscribe" type="button">Join</button>
                 <ul class="foter-cocials-items">
                     <!--Временно размечаю как ссылки на .png картинки, но должны быть .svg -> на 4-м или 5-м занятии узнаем как это делать-->
                     <li class="foter-cocials-item"><a class="foter-cocials-linc" href="#"><img src="fb.png" alt="fb linc"></a></li>
