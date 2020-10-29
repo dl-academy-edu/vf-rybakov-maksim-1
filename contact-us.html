@@ -17,56 +17,33 @@
             </ul>
         </nav>
         <button class="button-search" type="button"><img src="/images/search-icon.png" alt="site search" width="17" height="18"></button>
-        <a class="button-contact" href="/contact-us.html">Contact Us</a>
+        <a class="button-contact" href="#">Contact Us</a>
     </header>
     <main>
-    <h1 class="category-products-title">Category Products</h1>
-    <div class="breadcrumbs-block">
-        <p class="home-page-inactive">Home</p>
-        <img src="/images/breadcrumbs-vector.png" alt="breadcrumbs vector" width="8" height="12">
-        <p class="catalog-page-active">Catalog</p>
-    </div>
-    <section class="category-preview">
-        <h2 class="category-preview-title">Categoryes preview</h2>
-        <ul class="category-cards">
-            <!--Классы для карточек категорий скопировал из index.html-->
-            <li class="category-card">
-                <img class="category-foto" src="/images/apparel-kids.jpg" alt="baby blue jacket" width="244" height="177">
-                <a class="category-card-title" href="#">APPAREL KIDS</a>
-            </li>
-            <li class="category-card">
-                <img class="category-foto" src="/images/holiday-shop.jpg" alt="christmas sock" width="208" height="244">
-                <a class="category-card-title" href="#">HOLIDAY SHOP</a>
-            </li>
-            <li class="category-card">
-                <img class="category-foto" src="/images/toys.jpg" alt="toy deer" width="270" height="270">
-                <a class="category-card-title" href="#">TOYS</a>
-            </li>
-            <li class="category-card">
-                <img class="category-foto" src="/images/accessories.jpg" alt="skateboarder" width="240" height="250">
-                <a class="category-card-title" href="#">ACCESSORIES</a>
-            </li>
-            <li class="category-card">
-                <img class="category-foto" src="/images/pink-flamingo.jpg" alt="pink flamingo" width="248" height="248">
-                <a class="category-card-title" href="#">SALE</a>
-            </li>
-            <li class="category-card">
-                <img class="category-foto" src="/images/pink-shirt.jpg" alt="pink shirt" width="271" height="204">
-                <a class="category-card-title" href="#">APPAREL ADULTS</a>
-            </li>
-        </ul>
-    </section>
-    <section class="product-description">
-        <h2 class="product-description-title">Product Description</h2>
-        <p class="product-description-text">
-            Interactive doll Zapf Creation Baby Born Sister can drink from a bottle and almost really cry. You can even bathe her, just like a little sister.
-        </p>
-        <p class="product-description-text">
-            A toy with a height of 43 cm bends its knees, the head rotates, it can stand upright. Such a doll will be an excellent choice for a gift for a girl from 4 years old.
-        </p>
-        <p class="product-description-text">
-            The set includes a miniature set of fashionable clothes, a hairbrush, a bottle for water, a pair of hairpins and elastic bands for hair, as well as two bracelets: one for the doll, the other for her young mistress.
-        </p>
+        <h2 class="contacts-title">Contact  Us</h2>
+    <section>
+        <h2 class="popup-form visually-hidden">Popup form</h2>
+        <form id="popup" name="user-message" method="POST">
+            <fieldset>
+                <label for="popup-user-name">Name
+                    <input id="popup-user-name" type="text">
+                </label>
+                
+                <label for="popup-user-fone">Fone
+                    <input id="popup-user-fone" type="text">
+                </label>
+                <label for="popup-user-email">Email
+                    <input id="popup-user-email" type="email">
+                </label>
+                <label for="popup-user-message">Message</label>
+                <textarea name="user-message" id="popup-user-message" cols="80" rows="6"></textarea>
+                
+                <label>
+                    <input type="checkbox">By clicking on the button, you consent to the processing of your personal data
+                </label>
+                <button class="popup-subscribe" type="submit">Submit</button>
+            </fieldset>
+        </form>
     </section>
     </main>
     <footer class="footer">
@@ -99,10 +76,12 @@
                 <h2 class="footer-column-title">Connect</h2>
                 <!--Комментарий от куратора:"тут не должно быть списка. в список объединяются однотипные элементы" (вероятно речь идет о форме и соц кнопках)-->
                 <!--Комментарий от куратора (по поводу формы ввода емейла): "добавь тег form и после тег button этого пока достаточно"-->
-                <form>
-                    <!--Здесь надо будет позже добавить подсказку "Email" для формы ввода почты-->
-                    <input  type="text" name="email">
-                    <button class="button-subscribe" type="button">Join</button>
+                <form name="user-subscribe-form" method="POST">
+                    <input id="user-email"
+                        type="text"
+                        name="email"
+                        placeholder="Email">
+                    <button class="button-subscribe" type="submit">Join</button>
                 </form>
                 <ul class="footer-socials-items">
                     <!--Временно размечаю как ссылки на .png картинки, но должны быть .svg -> на 4-м или 5-м занятии узнаем как это делать-->
@@ -129,5 +108,6 @@
             <li class="footer-bottom-item"><p class="footer-and-text">Web Design — Direct Line Development</p></li>
         </ul>
     </footer>
+    
 </body>
 </html>
