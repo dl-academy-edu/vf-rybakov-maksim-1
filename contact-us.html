@@ -20,30 +20,40 @@
         <a class="button-contact" href="#">Contact Us</a>
     </header>
     <main>
-        <h2 class="contacts-title">Contact  Us</h2>
     <section>
-        <h2 class="popup-form visually-hidden">Popup form</h2>
-        <form id="popup" name="user-message" method="POST">
+        <h1 class="contacts-title">Contact  Us</h1>
+        <div class="breadcrumbs-block">
+            <p class="home-page-inactive">Home</p>
+            <img src="/images/breadcrumbs-vector.png" alt="breadcrumbs vector" width="8" height="12">
+            <p class="catalog-page-active">Contact us</p>
+        </div>
+        <form name="user-message" method="POST">
             <fieldset>
-                <label for="popup-user-name">Name
-                    <input id="popup-user-name" type="text">
+                <label>Name
+                    <input type="text" placeholder="Ivan Ivanov">
                 </label>
                 
-                <label for="popup-user-fone">Fone
-                    <input id="popup-user-fone" type="text">
+                <label>Fone
+                    <input type="text">
                 </label>
-                <label for="popup-user-email">Email
-                    <input id="popup-user-email" type="email">
+                <label>Email
+                    <input type="email">
                 </label>
-                <label for="popup-user-message">Message</label>
-                <textarea name="user-message" id="popup-user-message" cols="80" rows="6"></textarea>
+                <label for="contact-user-message">Message</label>
+                <textarea name="user-message" id="contact-user-message" cols="80" rows="6"></textarea>
                 
                 <label>
-                    <input type="checkbox">By clicking on the button, you consent to the processing of your personal data
+                    <input type="checkbox" checked>By clicking on the button, you consent to the processing of your personal data
                 </label>
-                <button class="popup-subscribe" type="submit">Submit</button>
+                <button class="contact-subscribe" type="submit">Submit</button>
             </fieldset>
         </form>
+    </section>
+    <section class="form-description">
+        <h2 class="form-description-title visually-hidden">Contact form</h2>
+        <p class="form-description-text">Our support team are on-hand to assist with any issues you are experiencing.</p>
+        <p class="form-description-text">Please use the form to contact us with your needs. Send us a message and we'll respond as soon as possible.</p>
+        <p class="form-description-slogan">An expert is waiting to help you!</p>
     </section>
     </main>
     <footer class="footer">
