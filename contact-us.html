@@ -20,53 +20,38 @@
         <a class="button-contact" href="/contact-us.html">Contact us</a>
     </header>
     <main>
-    <h1 class="category-products-title">Category Products</h1>
-    <div class="breadcrumbs-block">
-        <p class="home-page-inactive">Home</p>
-        <img src="/images/breadcrumbs-vector.png" alt="breadcrumbs vector" width="8" height="12">
-        <p class="catalog-page-active">Catalog</p>
-    </div>
-    <section class="category-preview">
-        <h2 class="category-preview-title">Categoryes preview</h2>
-        <ul class="category-cards">
-            <!--Классы для карточек категорий скопировал из index.html-->
-            <li class="category-card">
-                <img class="category-photo" src="/images/apparel-kids.jpg" alt="baby blue jacket" width="244" height="177">
-                <a class="category-card-title" href="#">APPAREL KIDS</a>
-            </li>
-            <li class="category-card">
-                <img class="category-photo" src="/images/holiday-shop.jpg" alt="christmas sock" width="208" height="244">
-                <a class="category-card-title" href="#">HOLIDAY SHOP</a>
-            </li>
-            <li class="category-card">
-                <img class="category-photo" src="/images/toys.jpg" alt="toy deer" width="270" height="270">
-                <a class="category-card-title" href="#">TOYS</a>
-            </li>
-            <li class="category-card">
-                <img class="category-photo" src="/images/accessories.jpg" alt="skateboarder" width="240" height="250">
-                <a class="category-card-title" href="#">ACCESSORIES</a>
-            </li>
-            <li class="category-card">
-                <img class="category-photo" src="/images/pink-flamingo.jpg" alt="pink flamingo" width="248" height="248">
-                <a class="category-card-title" href="#">SALE</a>
-            </li>
-            <li class="category-card">
-                <img class="category-photo" src="/images/pink-shirt.jpg" alt="pink shirt" width="271" height="204">
-                <a class="category-card-title" href="#">APPAREL ADULTS</a>
-            </li>
-        </ul>
+    <section>
+        <h1 class="contacts-title">Contact  Us</h1>
+        <div class="breadcrumbs-block">
+            <p class="home-page-inactive">Home</p>
+            <img src="/images/breadcrumbs-vector.png" alt="breadcrumbs vector" width="8" height="12">
+            <p class="catalog-page-active">Contact us</p>
+        </div>
+        <form class="contact-form" name="user-message" method="POST">
+            <fieldset class="contact-form-inputs">
+                <label class="contact-form-name">Name
+                    <input class="contact-user-name" type="text" placeholder="Ivan Ivanov">
+                </label>
+                <label class="contact-form-phone">Phone
+                    <input class="contact-user-form" type="text">
+                </label>
+                <label class="contact-form-email">Email
+                    <input class="contact-user-email" type="email">
+                </label>
+                <label class="contact-form-message" for="contact-user-message">Message</label>
+                <textarea class="contact-user-message" name="user-message" id="contact-user-message" cols="80" rows="6"></textarea>
+                <label class="contact-form-processing">
+                    <input class="contact-user-processing" type="checkbox" checked>By clicking on the button, you consent to the processing of your personal data
+                </label>
+                <button class="contact-subscribe" type="submit">Submit</button>
+            </fieldset>
+        </form>
     </section>
-    <section class="product-description">
-        <h2 class="product-description-title">Product Description</h2>
-        <p class="product-description-text">
-            Interactive doll Zapf Creation Baby Born Sister can drink from a bottle and almost really cry. You can even bathe her, just like a little sister.
-        </p>
-        <p class="product-description-text">
-            A toy with a height of 43 cm bends its knees, the head rotates, it can stand upright. Such a doll will be an excellent choice for a gift for a girl from 4 years old.
-        </p>
-        <p class="product-description-text">
-            The set includes a miniature set of fashionable clothes, a hairbrush, a bottle for water, a pair of hairpins and elastic bands for hair, as well as two bracelets: one for the doll, the other for her young mistress.
-        </p>
+    <section class="form-description">
+        <h2 class="form-description-title visually-hidden">Contact form</h2>
+        <p class="form-description-text">Our support team are on-hand to assist with any issues you are experiencing.</p>
+        <p class="form-description-text">Please use the form to contact us with your needs. Send us a message and we'll respond as soon as possible.</p>
+        <p class="form-description-slogan">An expert is waiting to help you!</p>
     </section>
     </main>
     <footer class="footer">
@@ -131,5 +116,6 @@
             <li class="footer-bottom-item"><p class="footer-and-text">Web design — Direct line development</p></li>
         </ul>
     </footer>
+    
 </body>
 </html>
