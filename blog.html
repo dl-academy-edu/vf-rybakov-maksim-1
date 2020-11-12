@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header class="header">
+        <!--Комментарий от куратора:"Логотип сайта должен быть обернут в тег и вести на главную страницу", обернул в <а>-->
+        <a class="index-link" href="index.html"><img class="header-logo" src="/images/logo.png" alt="dlk kompany logo" width="100" height="52"></a>
+        <nav class="header-nav">
+            <ul class="header-nav-list">
+                <li class="header-nav-link"><a href="#">Blog</a></li>
+                <li class="header-nav-link"><a href="/catalog.html">Catalog</a></li>
+                <li class="header-nav-link"><a href="#">About us</a></li>
+            </ul>
+        </nav>
+        <button class="button-search" type="button"><img src="/images/search-icon.png" alt="site search" width="17" height="18"></button>
+        <a class="button-contact" href="/contact-us.html">Contact us</a>
+    </header>
+    <main>
+    <h1 class="page-title"> Blog</h1>
+    <div class="breadcrumbs-block">
+        <p class="home-page-inactive">Home</p>
+        <img src="/images/breadcrumbs-vector.png" alt="breadcrumbs vector" width="8" height="12">
+        <p class="active-page"> Blog</p>
+    </div>
+    <section>
+        <ul class="blog-list">
+            <li class="blog-card">
+                <img class="blog-card-img" src="/images/designer-details.jpg" alt="designer details" width="380" height="220">
+                <p class="blog-card-date">23rd August 2018</p>
+                <h2 class="blog-card-title">Top 5 fastest growing it service companies in philly</h2>
+                <p class="blog-card-preview">Direct Line Development’s Team is excited to announce that we received UpCity’s 2019 Local Excellence Award! This prestigious award is annually presented to the Top 1% of service providers in the given marketplace.</p>
+            </li>
+            <li class="blog-card">
+                <img class="blog-card-img" src="/images/stuffed-toys.jpg" alt="stuffed toys" width="380" height="220">
+                <p class="blog-card-date">23rd August 2018</p>
+                <h2 class="blog-card-title">Best financial</h2>
+                <p class="blog-card-preview">Direct Line Development is honored to be recognized as one of the Top 100 Fastest Growing Companies 2019 in Philadelphia, according to Growjo’s ranking.</p>
+            </li>
+            <li class="blog-card">
+                <img class="blog-card-img" src="/images/small-toys.jpg" alt="small toys" width="380" height="220">
+                <p class="blog-card-date">23rd August 2018</p>
+                <h2 class="blog-card-title">Company logo or brand identity: which one is more important? brand identity</h2>
+                <p class="blog-card-preview">To survive in the world of digital marketing, you need to keep up with the latest SEO trends. Here are our simple, but effective, SEO tips for small business success.</p>
+            </li>
+            <li class="blog-card">
+                <img class="blog-card-img" src="/images/superhero-toy.jpg" alt="superhero toy" width="380" height="220">
+                <p class="blog-card-date">23rd August 2018</p>
+                <h2 class="blog-card-title">Best financial</h2>
+                <p class="blog-card-preview">Direct Line Development is honored to be recognized as one of the Top 100 Fastest Growing Companies 2019 in Philadelphia, according to Growjo’s ranking.</p>
+            </li>
+            <li class="blog-card">
+                <img class="blog-card-img" src="/images/doll-girl.jpg" alt="doll girl" width="380" height="220">
+                <p class="blog-card-date">23rd August 2018</p>
+                <h2 class="blog-card-title">Company logo or brand identity: which one is more important? brand identity</h2>
+                <p class="blog-card-preview">To survive in the world of digital marketing, you need to keep up with the latest SEO trends. Here are our simple, but effective, SEO tips for small business success.</p>
+            </li>
+            <li class="blog-card">
+                <img class="blog-card-img" src="/images/glass-stones.jpg" alt="glass stones" width="380" height="220">
+                <p class="blog-card-date">23rd August 2018</p>
+                <h2 class="blog-card-title">Top 5 fastest growing it service companies in philly</h2>
+                <p class="blog-card-preview">Direct Line Development’s Team is excited to announce that we received UpCity’s 2019 Local Excellence Award! This prestigious award is annually presented to the Top 1% of service providers in the given marketplace.</p>
+            </li>
+        </ul>
+    </section>
+    <section>
+        <h2 class="visually-hidden">Page pagination</h2>
+        <div class="left-pagination-arrow">
+            <a class="left-pagination-control" href="#"><img src="/images/left-arrow.png" alt="left arrow"></a>
+        </div>
+        <ul class="blog-card-pagination">
+            <li class="blog-pagination-number">
+                <a class="blog-number-active blog-number" href="#">1</a>
+            </li>
+            <li class="blog-pagination-number">
+                <a class="blog-number-inactive blog-number" href="#">2</a>
+            </li>
+            <li class="blog-pagination-number">
+                <a class="blog-number-inactive blog-number" href="#">3</a>
+            </li>
+            <li class="blog-pagination-number">
+                <a class="blog-number-inactive blog-number" href="#">4</a>
+            </li>
+        </ul>
+        <div class="right-pagination-arrow">
+            <a class="right-pagination-control" href="#"><img src="/images/right-arrow.png" alt="right arrow"></a>
+        </div>
+    </section>
+    </main>
+    <footer class="footer">
+        <ul class="footer-columns">
+            <li class="footer-column-navigation">
+                <!--Комментарий о куратора: "Заголовок здесь и далее должен быть вынесен из элемента списка на уровень выше", все перенес (эх и муторное это дело оказалось)-->
+                <h2 class="footer-column-title">Navigation</h2>
+                <!--Тут тегом размещал линию, но куратор прокомментировал так: "Эту линию нужно будет прописывать в стилях. Ее не должно быть в html. Здесь и в следующих элементах так же", поэтому код линии удалил-->
+                <ul class="footer-column-items">
+                    <li class="footer-column-item"><a class="footer-item-link" href="#">About us</a></li>
+                    <li class="footer-column-item"><a class="footer-item-link" href="#">Blog</a></li>
+                    <li class="footer-column-item"><a class="footer-item-link" href="#">Design services</a></li>
+                    <li class="footer-column-item"><a class="footer-item-link" href="#">Featured on</a></li>
+                    <li class="footer-column-item"><a class="footer-item-link" href="#">2018 holiday catalog</a></li>
+                    <li class="footer-column-item"><a class="footer-item-link" href="#">Shop by designer</a></li>
+                </ul>
+            </li>
+            <li class="footer-column-information">
+                <h2 class="footer-column-title">Customer information</h2>
+                <ul class="footer-column-items">
+                    <li class="footer-column-item"><a class="footer-item-link" href="/contact-us.html">Contact us</a></li>
+                    <li class="footer-column-item"><a class="footer-item-link" href="#">Sale exclusions</a></li>
+                    <li class="footer-column-item"><a class="footer-item-link" href="#">Shipping & returns</a></li>
+                    <li class="footer-column-item"><a class="footer-item-link" href="#">Terms & conditions</a></li>
+                    <li class="footer-column-item"><a class="footer-item-link" href="#">Privacy policy</a></li>
+                    <li class="footer-column-item"><a class="footer-item-link" href="#">Search</a></li>
+                </ul>
+            </li>
+            <li class="footer-column-connect">
+                <h2 class="footer-column-title">Connect</h2>
+                <!--Комментарий от куратора:"тут не должно быть списка. в список объединяются однотипные элементы" (вероятно речь идет о форме и соц кнопках)-->
+                <!--Комментарий от куратора (по поводу формы ввода емейла): "добавь тег form и после тег button этого пока достаточно"-->
+                <form name="user-subscribe-form" method="POST" action="https://echo.htmlacademy.ru">
+                    <input id="user-email"
+                        type="text"
+                        name="email"
+                        placeholder="Email">
+                    <button class="button-subscribe" type="submit">Join</button>
+                </form>
+                <ul class="footer-socials-items">
+                    <!--Временно размечаю как ссылки на .png картинки, но должны быть .svg -> на 4-м или 5-м занятии узнаем как это делать-->
+                    <li class="footer-socials-item"><a class="footer-socials-link" href="#"><img src="fb.png" alt="fb link"></a></li>
+                    <li class="footer-socials-item"><a class="footer-socials-link" href="#"><img src="twitter.png" alt="twitter link"></a></li>
+                    <li class="footer-socials-item"><a class="footer-socials-link" href="#"><img src="pinterest.png" alt="pinterest link"></a></li>
+                    <li class="footer-socials-item"><a class="footer-socials-link" href="#"><img src="instagram.png" alt="instagram link"></a></li>
+                </ul>
+            </li>
+        </ul>
+        <ul class="footer-bottom">
+            <li class="footer-bottom-item">
+                <p class="footer-bottom-text">Company rating</p>
+                <ul class="footer-rating">
+                    <!--Звездочки должны быть формата .svg, но узнаю как вставлять на 4-м или 5-м занятии, поэтому пока в .png-->
+                    <li class="footer-bottom-stars"><img class="rating-star" src="/images/star.png" alt="rating" width="17" height="16"></li>
+                    <li class="footer-bottom-stars"><img class="rating-star" src="/images/star.png" alt="rating" width="17" height="16"></li>
+                    <li class="footer-bottom-stars"><img class="rating-star" src="/images/star.png" alt="rating" width="17" height="16"></li>
+                    <li class="footer-bottom-stars"><img class="rating-star" src="/images/star.png" alt="rating" width="17" height="16"></li>
+                    <li class="footer-bottom-stars"><img class="rating-star" src="/images/star.png" alt="rating" width="17" height="16"></li>
+                </ul>
+            </li>
+            <li class="footer-bottom-item"><p class="footer-and-text">Copyright © 2018 Dlk • Design life kids</p></li>
+            <li class="footer-bottom-item"><p class="footer-and-text">Web design — Direct line development</p></li>
+        </ul>
+    </footer>
+</body>
+</html>
