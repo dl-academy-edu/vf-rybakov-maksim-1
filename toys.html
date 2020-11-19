@@ -20,49 +20,115 @@
         <a class="button-contact" href="/contact-us.html">Contact us</a>
     </header>
     <main>
-    <h1 class="page-title"> Blog</h1>
+    <h1 class="page-title"> Toy for kids</h1>
     <div class="breadcrumbs-block">
         <p class="home-page-inactive">Home</p>
         <img src="/images/breadcrumbs-vector.png" alt="breadcrumbs vector" width="8" height="12">
-        <p class="active-page">Blog</p>
+        <p class="home-page-inactive">Catalog</p>
+        <img src="/images/breadcrumbs-vector.png" alt="breadcrumbs vector" width="8" height="12">
+        <p class="active-page">Toys</p>
     </div>
     <section>
-        <ul class="blog-list">
-            <li class="blog-card">
-                <img class="blog-card-img" src="/images/designer-details.jpg" alt="designer details" width="380" height="220">
-                <p class="blog-card-date">23rd August 2018</p>
-                <h2 class="blog-card-title">Top 5 fastest growing it service companies in philly</h2>
-                <p class="blog-card-preview">Direct Line Development’s Team is excited to announce that we received UpCity’s 2019 Local Excellence Award! This prestigious award is annually presented to the Top 1% of service providers in the given marketplace.</p>
+        <form action="https://echo.htmlacademy.ru" method="post" class="details-goods">
+            <div class="cost-goods">
+                <div class="cost-title">
+                    <p>Cost</p>
+                </div>
+                <div class="cost-check">
+                    <img src="/images/form-circle.png" alt="form circle">
+                    <img src="/images/full-line.png" alt="full line">
+                    <img src="/images/blank-line.png" alt="blank line">
+                </div class="cost-value">
+                <div class="cost-value">
+                    <p>0</p>
+                    <p>500</p>
+                </div>
+            </div>
+            <fieldset class="form-color-wrapper">
+                <legend class="color-title">Color</legend>
+                <ul class="form-color-list">
+                    <li>
+                        <input id="check black" type="checkbox" class="color-checkbox-input">
+                        <label for="check black" class="color-checkbox-label">Black</label>
+                    </li>
+                    <li>
+                        <input id="check blue" type="checkbox" class="color-checkbox-input">
+                        <label for="check blue" class="color-checkbox-label">Blue</label>
+                    </li>
+                    <li>
+                        <input id="check green" type="checkbox" class="color-checkbox-input">
+                        <label for="check green" class="color-checkbox-label">Green</label>
+                    </li>
+                    <li>
+                        <input id="check white" type="checkbox" class="color-checkbox-input">
+                        <label for="check white" class="color-checkbox-label">White</label>
+                    </li>
+                </ul>
+            </fieldset>
+            <fieldset class="form-delivery-wrapper">
+                <legend class="delivery-title">Delivery</legend>
+                <ul class="form-delivery-list">
+                    <li>
+                        <input id="radio-free" type="radio" name="delivery" value="no" class="delivery-radio-input">
+                        <label for="radio-free" class="delivery-radio-label">Free shipping</label>
+                    </li>
+                    <li>
+                        <input id="radio-fast" type="radio" name="delivery" value="yes" class="delivery-radio-input" checked>
+                        <label for="radio-fast" class="delivery-radio-label">Fast shipping</label>
+                    </li>
+                </ul>
+            </fieldset>
+            <fieldset class="form-amount-wrapper">
+                <legend class="amount-title">Amount</legend>
+                <ul class="form-amount-list">
+                    <li>
+                        <input id="radio-0-5" type="radio" name="amount" value="yes" class="amount-radio-input" checked>
+                        <label for="radio-0-5" class="amount-radio-label">0-5</label>
+                    </li>
+                    <li>
+                        <input id="radio-10-20" type="radio" name="amount" value="no" class="amount-radio-input">
+                        <label for="radio-10-20" class="amount-radio-label">10-20</label>
+                    </li>
+                    <li>
+                        <input id="radio-20-50" type="radio" name="amount" value="no" class="amount-radio-input">
+                        <label for="radio-20-50" class="amount-radio-label">20-50</label>
+                    </li>
+                </ul>
+            </fieldset>
+            <button type="submit" class="details-goods-submit">Apply</button>
+        </form>
+    </section>
+    <section class="company-goods">
+        <ul class="goods-list">
+            <li class="goods-card">
+                <img class="goods-img" src="/images/chair-cover.png" alt="chair cover" width="380" height="385">
+                <p class="goods-description">Snarky bean bag chair cover</p>
+                <p class="goods-cost">$60.00 USD</p>
             </li>
-            <li class="blog-card">
-                <img class="blog-card-img" src="/images/stuffed-toys.jpg" alt="stuffed toys" width="380" height="220">
-                <p class="blog-card-date">23rd August 2018</p>
-                <h2 class="blog-card-title">Best financial</h2>
-                <p class="blog-card-preview">Direct Line Development is honored to be recognized as one of the Top 100 Fastest Growing Companies 2019 in Philadelphia, according to Growjo’s ranking.</p>
+            <li class="goods-card">
+                <img class="goods-img" src="/images/brass-frames.png" alt="brass frames" width="380" height="385">
+                <p class="goods-description">Brass deco frames</p>
+                <p class="goods-cost">$66.00 USD</p>
             </li>
-            <li class="blog-card">
-                <img class="blog-card-img" src="/images/small-toys.jpg" alt="small toys" width="380" height="220">
-                <p class="blog-card-date">23rd August 2018</p>
-                <h2 class="blog-card-title">Company logo or brand identity: which one is more important? brand identity</h2>
-                <p class="blog-card-preview">To survive in the world of digital marketing, you need to keep up with the latest SEO trends. Here are our simple, but effective, SEO tips for small business success.</p>
+            <li class="goods-card">
+                <img class="goods-img" src="/images/apron.png" alt="apron" width="380" height="385">
+                <p class="goods-description">Cibo full apron</p>
+                <p class="goods-cost">$60.00 USD</p>
             </li>
-            <li class="blog-card">
-                <img class="blog-card-img" src="/images/superhero-toy.jpg" alt="superhero toy" width="380" height="220">
-                <p class="blog-card-date">23rd August 2018</p>
-                <h2 class="blog-card-title">Best financial</h2>
-                <p class="blog-card-preview">Direct Line Development is honored to be recognized as one of the Top 100 Fastest Growing Companies 2019 in Philadelphia, according to Growjo’s ranking.</p>
+            <li class="goods-card">
+                <img class="goods-img" src="/images/gumball-machine.png" alt="gumball machine" width="380" height="385">
+                <p class="goods-description">Gatcha gatcha gumball machine</p>
+                <p class="goods-cost">$56.00 USD</p>
             </li>
-            <li class="blog-card">
-                <img class="blog-card-img" src="/images/doll-girl.jpg" alt="doll girl" width="380" height="220">
-                <p class="blog-card-date">23rd August 2018</p>
-                <h2 class="blog-card-title">Company logo or brand identity: which one is more important? brand identity</h2>
-                <p class="blog-card-preview">To survive in the world of digital marketing, you need to keep up with the latest SEO trends. Here are our simple, but effective, SEO tips for small business success.</p>
+            <li class="goods-card">
+                <img class="goods-img" src="/images/scented-candle.png" alt="scented candle" width="380" height="385">
+                <p class="goods-description">Christmas advent scented candle</p>
+                <p class="goods-cost">$29.00 USD</p>
             </li>
-            <li class="blog-card">
-                <img class="blog-card-img" src="/images/glass-stones.jpg" alt="glass stones" width="380" height="220">
-                <p class="blog-card-date">23rd August 2018</p>
-                <h2 class="blog-card-title">Top 5 fastest growing it service companies in philly</h2>
-                <p class="blog-card-preview">Direct Line Development’s Team is excited to announce that we received UpCity’s 2019 Local Excellence Award! This prestigious award is annually presented to the Top 1% of service providers in the given marketplace.</p>
+            <li class="goods-card">
+                <img class="goods-img" src="/images/tangle-spinning-tea-light.png" alt="tangle spinning tea light" width="380" height="382">
+                <p class="goods-description">Tangle sprinning tea light</p>
+                <p class="goods-cost">$56.00 USD</p>
             </li>
         </ul>
     </section>
