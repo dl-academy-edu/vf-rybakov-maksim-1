@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,600;0,700;1,300;1,600;1,700&family=Open+Sans:wght@400;700&family=Roboto:ital@0;1&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="/stile.css">
 </head>
 <body>
@@ -12,12 +14,12 @@
         <a class="index-link" href="index.html"><img class="header-logo" src="/images/logo.png" alt="dlk company logo" width="100" height="52"></a>
         <nav class="header-nav">
             <ul class="header-nav-list">
-                <li class="header-nav-link"><a href="#">Blog</a></li>
-                <li class="header-nav-link"><a href="/catalog.html">Catalog</a></li>
-                <li class="header-nav-link"><a href="#">About us</a></li>
+                <li class="header-nav-link"><a class="nav-link" href="#">Blog</a></li>
+                <li class="header-nav-link"><a class="nav-link" href="/catalog.html">Catalog</a></li>
+                <li class="header-nav-link"><a class="nav-link" href="#">About us</a></li>
             </ul>
         </nav>
-        <button class="button-search" type="button"><img src="/images/search-icon.png" alt="site search" width="17" height="18"></button>
+        <img src="/images/search-icon.png" alt="site search" width="17" height="18">
         <a class="button-contact" href="/contact-us.html">Contact us</a>
     </header>
     <main>
@@ -33,28 +35,28 @@
         </ul>
         <h2 class="slider-title">The ooh noo collection</h2>
         <p class="slider-description">Designed in Slovenia</p>
-        <a class="popup-button" href="#popup">Explore now</a>
+        <a class="button popup-button-link" href="#popup">Explore now</a>
         <img class="slider-image" src="/images/toy-in-trolley.png" alt="toy in trolley" width="635" height="461">
         <p class="slider-benefits">Free (continental) USA shipping on all orders of $100 USD or more!</p>
     </section>
     <section class="category-products">
-        <h2 class="category-title">Category products</h2>
+        <h2 class="block-title category-title">Category products</h2>
         <ul class="category-list">
             <!--Комментарий о куратора: "картинки лучше вставить, т.к. потом без этого могут возникнуть сложности", поэтому вставил-->
-            <li class="category-card">
-                <img class="category-photo" src="/images/apparel-kids.jpg" alt="baby blue jacket" width="244" height="177">
+            <li class="category-card first-card-block">
+                <img class="category-photo" src="/images/apparel-kids.png" alt="baby blue jacket" width="244" height="177">
                 <a class="category-card-title" href="#">Apparel kids</a>
             </li>
-            <li class="category-card">
-                <img class="category-photo" src="/images/holiday-shop.jpg" alt="christmas sock" width="208" height="244">
+            <li class="category-card second-card-block">
+                <img class="category-photo" src="/images/holiday-shop.png" alt="christmas sock" width="208" height="244">
                 <a class="category-card-title" href="#">Holiday shop</a>
             </li>
-            <li class="category-card">
-                <img class="category-photo" src="/images/toys.jpg" alt="toy deer" width="270" height="270">
+            <li class="category-card third-card-block">
+                <img class="category-photo" src="/images/toys.png" alt="toy deer" width="270" height="270">
                 <a class="category-card-title" href="#">Toys</a>
             </li>
-            <li class="category-card">
-                <img class="category-photo" src="/images/accessories.jpg" alt="skateboarder" width="240" height="250">
+            <li class="category-card fourth-card-block">
+                <img class="category-photo" src="/images/accessories.png" alt="skateboarder" width="240" height="250">
                 <a class="category-card-title" href="#">Accessories</a>
             </li>
         </ul>
@@ -63,21 +65,21 @@
             <button class="category-control" type="button"><img src="/images/left-vector.png" alt="left vector" width="13" height="26"></button>
             <button class="category-control" type="button"><img src="/images/right-vector.png" alt="right vector" width="13" height="26"></button>
         </div>
-        <p class="category-description">Modern finds for the modern home. Curated goods by unique designers around the world from fashion to furniture for kids and adults.</p>
+        <p class="block-description category-description">Modern finds for the modern home. Curated goods by unique designers around the world from fashion to furniture for kids and adults.</p>
     </section>
     <section class="services">
         <!--Коммент от куратора: "картинку нужно вставить", поэтому вставляю-->
         <img class="service-picture" src="/images/girl-in-dress.jpg" alt="a girl in a dress" width="480" height="559">
         <div class="right-service-block">
-            <h2 class="service-title">Delivery</h2>
+            <h2 class="block-title service-title">Delivery</h2>
             <ul class="service-list">
                 <li class="active-service-list">Delivery</li>
                 <li class="hidden-service-list">Guarantee</li>
                 <li class="hidden-service-list">Credit</li>
             </ul>
-            <p class="services-description">Some days i feel like i've been working on dlk my entire life and there are other days that i am completely shocked that four years have flown by. It's simply magical.</p>
-            <p class="services-description">What started as an outlet to deal  with the traumatic loss of my husband, dlk has now become a truly happy place for me and i have you and all of the beautiful designers that we work with to thank!</p>
-            <a href="#" class="button">Learn more</a>
+            <p class="block-description services-description">Some days i feel like i've been working on dlk my entire life and there are other days that i am completely shocked that four years have flown by. It's simply magical.</p>
+            <p class="block-description services-description">What started as an outlet to deal  with the traumatic loss of my husband, dlk has now become a truly happy place for me and i have you and all of the beautiful designers that we work with to thank!</p>
+            <a class="button" href="#">Learn more</a>
         </div>
     </section>
     <section class="partners">
@@ -92,14 +94,14 @@
     <section class="about-us">
         <!--Комментарий от куратора: "не обязательно было создавать элемент списка для двух блоков. можно обернуть в простой div", поэтому переделал-->
         <div class="about-us-left">
-            <h2 class="about-us-title">Design life kids</h2>
+            <h2 class="block-title about-us-title">Design life kids</h2>
             <h3 class="about-us-subtitle">About us</h3>
-            <p class="about-us-description">Some days i feel like i've been working on dlk my entire life and there are other days that i am completely shocked that four years have flown by. It's simply magical.</p>
+            <p class="block-description about-us-description">Some days i feel like i've been working on dlk my entire life and there are other days that i am completely shocked that four years have flown by. It's simply magical.</p>
             <a href="#" class="button">buy now</a>
         </div>
         <div class="abuot-us-right">
-            <h2 class="about-us-title">Contacts</h2>
-            <p class="about-us-description">Some days i feel like i've been working on dlk my entire life and there are other days that i am completely shocked that four years have flown by. It's simply magical.</p>
+            <h2 class="block-title about-us-title">Contacts</h2>
+            <p class="block-description about-us-description">Some days i feel like i've been working on dlk my entire life and there are other days that i am completely shocked that four years have flown by. It's simply magical.</p>
             <img class="about-us-map" src="/images/map.png" alt="map" width="483" height="196">
         </div>
     </section>
@@ -135,11 +137,11 @@
                 <!--Комментарий от куратора:"тут не должно быть списка. в список объединяются однотипные элементы" (вероятно речь идет о форме и соц кнопках)-->
                 <!--Комментарий от куратора (по поводу формы ввода емейла): "добавь тег form и после тег button этого пока достаточно"-->
                 <form name="user-subscribe-form" method="POST" action="https://echo.htmlacademy.ru">
-                    <input id="user-email"
+                    <input class="join-user-email" id="user-email"
                         type="text"
                         name="email"
                         placeholder="Email">
-                    <button class="button-subscribe" type="submit">Join</button>
+                    <button class="button button-subscribe" type="submit">Join</button>
                 </form>
                 <ul class="footer-socials-items">
                     <!--Временно размечаю как ссылки на .png картинки, но должны быть .svg -> на 4-м или 5-м занятии узнаем как это делать-->
@@ -163,7 +165,7 @@
                 </ul>
             </li>
             <li class="footer-bottom-item"><p class="footer-and-text">Copyright © 2018 Dlk • Design life kids</p></li>
-            <li class="footer-bottom-item"><p class="footer-and-text">Web design — Direct line development</p></li>
+            <li class="footer-bottom-author"><p class="footer-and-text">Web design — Direct line development</p></li>
         </ul>
     </footer>
     <section class="index-popup">

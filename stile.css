@@ -1,5 +1,246 @@
+/*general*/
+
 body {
     margin: 0;
+    font-family: 'Open Sans', Arial, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
 }
-/*gjlrk.xfftv ihbans*/
- 
+
+.img {
+    max-width: 100%;
+}
+
+.button {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 22px;
+    background: #000000;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #FFFFFF;
+    border: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    -webkit-clip-path: inset(100%);
+            clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+/*heder*/
+
+.nav-link {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 19px;
+    text-decoration: none;
+    color: black;
+}
+
+.button-contact {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 19px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: black;
+}
+
+    /*slider*/
+
+.slider {
+    background-color: #EEE4DB;
+}
+
+    .slider-page-number {
+    font-family: Montserrat;
+    font-weight: 300;
+    font-size: 60px;
+    color: rgba(30, 6, 6, 0.05);
+}
+
+.slider-active-page {
+    width: 31px;
+    height: 3px;
+    background: rgba(30, 6, 6, 0.6);
+    border: none;
+}
+
+.slider-hidden-page {
+    width: 31px;
+    height: 3px;
+    background: #D6CAC2;
+    border: none;
+}
+
+.slider-title {
+    font-family: Montserrat;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 110%;
+    text-transform: uppercase;
+    color: #1E0606;
+}
+
+.slider-description {
+    font-family: Crimson Text;
+    font-style: italic;
+    font-size: 20px;
+    line-height: 25px;
+    color: #1E0606;
+}
+
+.slider-benefits {
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 16px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    background-color: #C29974;
+}
+
+    /*Category products*/
+
+.block-title {
+    font-family: Montserrat;
+    font-weight: bold;
+    font-size: 38px;
+    line-height: 46px;
+    text-transform: uppercase;
+    color: #1E0606;
+}
+
+.category-card-title {
+    font-family: Montserrat;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 32px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.block-description {
+    color: #1E0606;
+}
+
+.first-card-block {
+    background-color: #DBE4DB;
+}
+
+.second-card-block {
+    background-color: #EADDD3;
+}
+
+.third-card-block {
+    background-color: #f8dae3;
+}
+
+.fourth-card-block {
+    background-color: #D5D4E1;
+}
+
+    /*Service block*/
+
+.service-list {
+    font-family: Crimson Text;
+    font-style: italic;
+    font-size: 26px;
+    line-height: 32px;
+    color: #1E0606;
+}
+
+.active-service-list {
+    font-weight: bold;
+}
+
+    /*About us*/
+
+.about-us-subtitle {
+    font-family: Crimson Text;
+    font-style: italic;
+    font-weight: normal;
+    font-size: 26px;
+    line-height: 32px;
+    color: #1E0606;
+    text-transform: capitalize;
+}
+
+
+/*Footer*/
+
+.footer {
+    background: #434343;
+}
+
+.footer-columns {
+    list-style: none;
+}
+
+.footer-column-title {
+    color: #AAAAAA;
+}
+
+.footer-item-link {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.join-user-email {
+    color: #EBEBEB;
+    background-color: #666666;
+}
+
+.footer-bottom {
+    color: #FFFFFF;
+}
+
+.footer-bottom-author {
+    color: #A2A2A2;
+}
+
+/*Index bottom form*/
+
+.index-popup {
+    background: #E5EAF8;
+}
+
+.index-popup-inputs {
+    border-width: 0;
+}
+
+.index-popup-inputs label {
+    font-family: Roboto;
+    font-size: 14px;
+    line-height: 16px;
+    color: #1E0606;
+}
+
+.index-user-processing {
+    font-family: Roboto;
+    font-size: 14px;
+    line-height: 16px;
+    color: #1E0606;
+}
+
+.popup-subscribe {
+    text-transform: uppercase;
+    color: #E1E1E1;
+    border: 0;
+    background-color: #C1C1C1;
+}
