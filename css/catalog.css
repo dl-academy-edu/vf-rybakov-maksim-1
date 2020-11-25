@@ -1,0 +1,46 @@
+.category-card-title {
+    font-family: Montserrat;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 32px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.first-card-block {
+    background-color: #DBE4DB;
+}
+
+.second-card-block {
+    background-color: #EADDD3;
+}
+
+.third-card-block {
+    background-color: #f8dae3;
+}
+
+.fourth-card-block {
+    background-color: #D5D4E1;
+}
+
+.fifth-card-block {
+    background-color: #F3D0DB;
+}
+
+.sixth-card-block {
+    background-color: #E5EAF8;
+}
+
+.product-description-title {
+    font-family: Montserrat;
+font-weight: bold;
+font-size: 38px;
+line-height: 46px;
+text-transform: uppercase;
+color: #1E0606;
+}
+
+.product-description-text {
+    color: #1E0606;
+}

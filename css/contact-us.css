@@ -1,0 +1,33 @@
+/*contact form*/
+.contact-form {
+    background-color: #E5EAF8;
+}
+
+.contact-form-inputs {
+    border-width: 0;
+}
+
+.contact-form-label {
+    font-size: 14px;
+    line-height: 19px;
+    color: #1E0606;
+}
+
+.contact-user-name {
+    font-size: 18px;
+    line-height: 25px;
+    color: #1E0606;
+}
+
+.form-description-text {
+    color: #1E0606;
+}
+
+.form-description-slogan {
+    font-family: Montserrat;
+    font-weight: 600;
+    font-size: 26px;
+    line-height: 34px;
+    text-transform: uppercase;
+    color: #C29974;
+}

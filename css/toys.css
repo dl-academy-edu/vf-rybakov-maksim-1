@@ -1,0 +1,40 @@
+.details-goods {
+    background-color: #E5EAF8;
+}
+
+.details-block-title {
+    font-weight: bold;
+}
+
+.details-form-border {
+    border-width: 0;
+}
+
+.goods-description {
+    font-size: 14px;
+    line-height: 19px;
+    text-transform: uppercase;
+}
+
+.goods-cost {
+    font-weight: bold;
+}
+
+
+/*pagination block*/
+.blog-number {
+    font-family: Montserrat;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.blog-number-active {
+    color: #C29974;
+}
+
+.blog-number-inactive {
+    color: #1E0606;
+}

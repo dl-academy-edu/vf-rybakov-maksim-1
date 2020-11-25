@@ -6,40 +6,52 @@
     <title>Document</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,600;0,700;1,300;1,600;1,700&family=Open+Sans:wght@400;700&family=Roboto:ital@0;1&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="/stile.css">
+    <link rel="stylesheet" type="text/css" href="/css/stile.css">
+    <link rel="stylesheet" type="text/css" href="/css/index.css">
 </head>
 <body>
-    <header class="header">
+    <header class="header container">
         <!--Комментарий от куратора:"Логотип сайта должен быть обернут в тег и вести на главную страницу", обернул в <а>-->
-        <a class="index-link" href="index.html"><img class="header-logo" src="/images/logo.png" alt="dlk company logo" width="100" height="52"></a>
+        <a class="index-link" href="/index.html"><img class="header-logo" src="/images/logo.png" alt="dlk company logo" width="100" height="52"></a>
         <nav class="header-nav">
             <ul class="header-nav-list">
-                <li class="header-nav-link"><a class="nav-link" href="#">Blog</a></li>
-                <li class="header-nav-link"><a class="nav-link" href="/catalog.html">Catalog</a></li>
+                <li class="header-nav-link"><a class="nav-link" href="/pages/blog.html">Blog</a></li>
+                <li class="header-nav-link"><a class="nav-link" href="/pages/catalog.html">Catalog</a></li>
                 <li class="header-nav-link"><a class="nav-link" href="#">About us</a></li>
             </ul>
         </nav>
-        <img src="/images/search-icon.png" alt="site search" width="17" height="18">
-        <a class="button-contact" href="/contact-us.html">Contact us</a>
+        <img class="header-search" src="/images/search-icon.png" alt="site search" width="17" height="18">
+        <a class="button-contact" href="/pages/contact-us.html">Contact us</a>
     </header>
     <main>
         <h1 class="home-page-title visually-hidden">DLC shop</h1>
-    <section class="slider">
-        <p class="slider-page-number">01</p>
-        <ul>
-            <!--Комментарий от куратора: "в button не нужно класть картинки. Этот элемент можно потом будет сделать чисто стилями", поэтому картинки полосок из кнопок удалил-->
-            <li class="slider-page"><button class="slider-active-page" type="button"></button></li>
-            <li class="slider-page"><button class="slider-hidden-page" type="button"></button></li>
-            <li class="slider-page"><button class="slider-hidden-page" type="button"></button></li>
-            <li class="slider-page"><button class="slider-hidden-page" type="button"></button></li>
-        </ul>
-        <h2 class="slider-title">The ooh noo collection</h2>
-        <p class="slider-description">Designed in Slovenia</p>
-        <a class="button popup-button-link" href="#popup">Explore now</a>
-        <img class="slider-image" src="/images/toy-in-trolley.png" alt="toy in trolley" width="635" height="461">
-        <p class="slider-benefits">Free (continental) USA shipping on all orders of $100 USD or more!</p>
+    <section class="container">
+        <div class="slider">
+            <div class="slider-information">
+                <div class="slider-pagination">
+                    <p class="slider-page-number">01</p>
+                    <ul class="slider-page-buttons">
+                        <!--Комментарий от куратора: "в button не нужно класть картинки. Этот элемент можно потом будет сделать чисто стилями", поэтому картинки полосок из кнопок удалил-->
+                        <li class="slider-page"><button class="slider-active-page" type="button"></button></li>
+                        <li class="slider-page"><button class="slider-hidden-page" type="button"></button></li>
+                        <li class="slider-page"><button class="slider-hidden-page" type="button"></button></li>
+                        <li class="slider-page"><button class="slider-hidden-page" type="button"></button></li>
+                    </ul>
+                </div>
+                <div class="slider-description">
+                    <h2 class="slider-title">The ooh noo collection</h2>
+                    <p class="slider-description-article">Designed in Slovenia</p>
+                    <a class="button popup-button-link" href="#popup">Explore now</a>
+                </div>
+            </div>
+            
+            <img class="slider-image" src="/images/toy-in-trolley.png" alt="toy in trolley" width="635" height="461">
+        </div>
+        <div class="slider-benefits-wrapper">
+            <p class="slider-benefits">Free (continental) USA shipping on all orders of $100 USD or more!</p>
+        </div>
     </section>
-    <section class="category-products">
+    <section class="category-products container">
         <h2 class="block-title category-title">Category products</h2>
         <ul class="category-list">
             <!--Комментарий о куратора: "картинки лучше вставить, т.к. потом без этого могут возникнуть сложности", поэтому вставил-->
@@ -53,7 +65,7 @@
             </li>
             <li class="category-card third-card-block">
                 <img class="category-photo" src="/images/toys.png" alt="toy deer" width="270" height="270">
-                <a class="category-card-title" href="#">Toys</a>
+                <a class="category-card-title" href="/pages/toys.html">Toys</a>
             </li>
             <li class="category-card fourth-card-block">
                 <img class="category-photo" src="/images/accessories.png" alt="skateboarder" width="240" height="250">
@@ -64,10 +76,10 @@
         <div class="category-pagination">
             <button class="category-control" type="button"><img src="/images/left-vector.png" alt="left vector" width="13" height="26"></button>
             <button class="category-control" type="button"><img src="/images/right-vector.png" alt="right vector" width="13" height="26"></button>
+            <p class="block-description category-description">Modern finds for the modern home. Curated goods by unique designers around the world from fashion to furniture for kids and adults.</p>
         </div>
-        <p class="block-description category-description">Modern finds for the modern home. Curated goods by unique designers around the world from fashion to furniture for kids and adults.</p>
     </section>
-    <section class="services">
+    <section class="services container">
         <!--Коммент от куратора: "картинку нужно вставить", поэтому вставляю-->
         <img class="service-picture" src="/images/girl-in-dress.jpg" alt="a girl in a dress" width="480" height="559">
         <div class="right-service-block">
@@ -79,20 +91,19 @@
             </ul>
             <p class="block-description services-description">Some days i feel like i've been working on dlk my entire life and there are other days that i am completely shocked that four years have flown by. It's simply magical.</p>
             <p class="block-description services-description">What started as an outlet to deal  with the traumatic loss of my husband, dlk has now become a truly happy place for me and i have you and all of the beautiful designers that we work with to thank!</p>
-            <a class="button" href="#">Learn more</a>
+            <a class="button service-button" href="#">Learn more</a>
         </div>
     </section>
-    <section class="partners">
+    <section class="partners container">
         <h2 class="partners-title visually-hidden">Partners</h2>
-        <ul>
-            <li><a href="#"><img src="/images/mail.png" alt="mail.ru" width="193" height="60"></a></li>
-            <li><a href="#"><img src="/images/apple.png" alt="apple" width="179" height="61"></a></li>
-            <li><a href="#"><img src="/images/eltex.png" alt="eltex" width="216" height="46"></a></li>
-            <li><a href="#"><img src="/images/owox.png" alt="owox" width="211" height="40"></a></li>
+        <ul class="partners-list">
+            <li><a class="pertner-name" href="#"><img src="/images/mail.png" alt="mail.ru" width="193" height="60"></a></li>
+            <li><a class="pertner-name" href="#"><img src="/images/apple.png" alt="apple" width="179" height="61"></a></li>
+            <li><a class="pertner-name" href="#"><img src="/images/eltex.png" alt="eltex" width="216" height="46"></a></li>
+            <li><a class="pertner-name" href="#"><img src="/images/owox.png" alt="owox" width="211" height="40"></a></li>
         </ul>
     </section>
-    <section class="about-us">
-        <!--Комментарий от куратора: "не обязательно было создавать элемент списка для двух блоков. можно обернуть в простой div", поэтому переделал-->
+    <section class="about-us container">
         <div class="about-us-left">
             <h2 class="block-title about-us-title">Design life kids</h2>
             <h3 class="about-us-subtitle">About us</h3>
@@ -106,7 +117,7 @@
         </div>
     </section>
     </main>
-    <footer class="footer">
+    <footer class="footer container">
         <ul class="footer-columns">
             <li class="footer-column-navigation">
                 <!--Комментарий о куратора: "Заголовок здесь и далее должен быть вынесен из элемента списка на уровень выше", все перенес (эх и муторное это дело оказалось)-->
@@ -154,15 +165,17 @@
         </ul>
         <ul class="footer-bottom">
             <li class="footer-bottom-item">
-                <p class="footer-bottom-text">Company rating</p>
-                <ul class="footer-rating">
-                    <!--Звездочки должны быть формата .svg, но узнаю как вставлять на 4-м или 5-м занятии, поэтому пока в .png-->
-                    <li class="footer-bottom-stars"><img class="rating-star" src="/images/star.png" alt="rating" width="17" height="16"></li>
-                    <li class="footer-bottom-stars"><img class="rating-star" src="/images/star.png" alt="rating" width="17" height="16"></li>
-                    <li class="footer-bottom-stars"><img class="rating-star" src="/images/star.png" alt="rating" width="17" height="16"></li>
-                    <li class="footer-bottom-stars"><img class="rating-star" src="/images/star.png" alt="rating" width="17" height="16"></li>
-                    <li class="footer-bottom-stars"><img class="rating-star" src="/images/star.png" alt="rating" width="17" height="16"></li>
-                </ul>
+                <div class="footer-rating-wrapper">
+                    <p class="footer-bottom-text">Company rating</p>
+                    <ul class="footer-rating">
+                        <!--Звездочки должны быть формата .svg, но узнаю как вставлять на 4-м или 5-м занятии, поэтому пока в .png-->
+                        <li class="footer-bottom-stars"><img class="rating-star" src="/images/star.png" alt="rating" width="17" height="16"></li>
+                        <li class="footer-bottom-stars"><img class="rating-star" src="/images/star.png" alt="rating" width="17" height="16"></li>
+                        <li class="footer-bottom-stars"><img class="rating-star" src="/images/star.png" alt="rating" width="17" height="16"></li>
+                        <li class="footer-bottom-stars"><img class="rating-star" src="/images/star.png" alt="rating" width="17" height="16"></li>
+                        <li class="footer-bottom-stars"><img class="rating-star" src="/images/star.png" alt="rating" width="17" height="16"></li>
+                    </ul>
+                </div>
             </li>
             <li class="footer-bottom-item"><p class="footer-and-text">Copyright © 2018 Dlk • Design life kids</p></li>
             <li class="footer-bottom-author"><p class="footer-and-text">Web design — Direct line development</p></li>

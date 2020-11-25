@@ -4,20 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,600;0,700;1,300;1,600;1,700&family=Open+Sans:wght@400;700&family=Roboto:ital@0;1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="/css/stile.css">
+    <link rel="stylesheet" type="text/css" href="/css/toys.css">
 </head>
 <body>
     <header class="header">
         <!--Комментарий от куратора:"Логотип сайта должен быть обернут в тег и вести на главную страницу", обернул в <а>-->
-        <a class="index-link" href="index.html"><img class="header-logo" src="/images/logo.png" alt="dlk kompany logo" width="100" height="52"></a>
+        <a class="index-link" href="/index.html"><img class="header-logo" src="/images/logo.png" alt="dlk company logo" width="100" height="52"></a>
         <nav class="header-nav">
             <ul class="header-nav-list">
-                <li class="header-nav-link"><a href="#">Blog</a></li>
-                <li class="header-nav-link"><a href="/catalog.html">Catalog</a></li>
-                <li class="header-nav-link"><a href="#">About us</a></li>
+                <li class="header-nav-link"><a class="nav-link" href="/pages/blog.html">Blog</a></li>
+                <li class="header-nav-link"><a class="nav-link" href="/pages/catalog.html">Catalog</a></li>
+                <li class="header-nav-link"><a class="nav-link" href="#">About us</a></li>
             </ul>
         </nav>
-        <button class="button-search" type="button"><img src="/images/search-icon.png" alt="site search" width="17" height="18"></button>
-        <a class="button-contact" href="/contact-us.html">Contact us</a>
+        <img src="/images/search-icon.png" alt="site search" width="17" height="18">
+        <a class="button-contact" href="/pages/contact-us.html">Contact us</a>
     </header>
     <main>
     <h1 class="page-title"> Toy for kids</h1>
@@ -32,7 +36,7 @@
         <form action="https://echo.htmlacademy.ru" method="post" class="details-goods">
             <div class="cost-goods">
                 <div class="cost-title">
-                    <p>Cost</p>
+                    <p class="details-block-title">Cost</p>
                 </div>
                 <div class="cost-check">
                     <img src="/images/form-circle.png" alt="form circle">
@@ -44,8 +48,8 @@
                     <p>500</p>
                 </div>
             </div>
-            <fieldset class="form-color-wrapper">
-                <legend class="color-title">Color</legend>
+            <fieldset class="form-color-wrapper details-form-border">
+                <legend class="color-title details-block-title">Color</legend>
                 <ul class="form-color-list">
                     <li>
                         <input id="check black" type="checkbox" class="color-checkbox-input">
@@ -65,8 +69,8 @@
                     </li>
                 </ul>
             </fieldset>
-            <fieldset class="form-delivery-wrapper">
-                <legend class="delivery-title">Delivery</legend>
+            <fieldset class="form-delivery-wrapper details-form-border">
+                <legend class="delivery-title details-block-title">Delivery</legend>
                 <ul class="form-delivery-list">
                     <li>
                         <input id="radio-free" type="radio" name="delivery" value="no" class="delivery-radio-input">
@@ -78,8 +82,8 @@
                     </li>
                 </ul>
             </fieldset>
-            <fieldset class="form-amount-wrapper">
-                <legend class="amount-title">Amount</legend>
+            <fieldset class="form-amount-wrapper details-form-border">
+                <legend class="amount-title details-block-title">Amount</legend>
                 <ul class="form-amount-list">
                     <li>
                         <input id="radio-0-5" type="radio" name="amount" value="yes" class="amount-radio-input" checked>
@@ -95,7 +99,7 @@
                     </li>
                 </ul>
             </fieldset>
-            <button type="submit" class="details-goods-submit">Apply</button>
+            <button type="submit" class="details-goods-submit button">Apply</button>
         </form>
     </section>
     <section class="company-goods">
@@ -187,11 +191,11 @@
                 <!--Комментарий от куратора:"тут не должно быть списка. в список объединяются однотипные элементы" (вероятно речь идет о форме и соц кнопках)-->
                 <!--Комментарий от куратора (по поводу формы ввода емейла): "добавь тег form и после тег button этого пока достаточно"-->
                 <form name="user-subscribe-form" method="POST" action="https://echo.htmlacademy.ru">
-                    <input id="user-email"
+                    <input class="join-user-email" id="user-email"
                         type="text"
                         name="email"
                         placeholder="Email">
-                    <button class="button-subscribe" type="submit">Join</button>
+                    <button class="button button-subscribe" type="submit">Join</button>
                 </form>
                 <ul class="footer-socials-items">
                     <!--Временно размечаю как ссылки на .png картинки, но должны быть .svg -> на 4-м или 5-м занятии узнаем как это делать-->
@@ -215,7 +219,7 @@
                 </ul>
             </li>
             <li class="footer-bottom-item"><p class="footer-and-text">Copyright © 2018 Dlk • Design life kids</p></li>
-            <li class="footer-bottom-item"><p class="footer-and-text">Web design — Direct line development</p></li>
+            <li class="footer-bottom-author"><p class="footer-and-text">Web design — Direct line development</p></li>
         </ul>
     </footer>
 </body>

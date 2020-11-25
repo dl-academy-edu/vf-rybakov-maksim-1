@@ -4,20 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,600;0,700;1,300;1,600;1,700&family=Open+Sans:wght@400;700&family=Roboto:ital@0;1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="/css/stile.css">
+    <link rel="stylesheet" type="text/css" href="/css/contact-us.css">
 </head>
 <body>
     <header class="header">
         <!--Комментарий от куратора:"Логотип сайта должен быть обернут в тег и вести на главную страницу", обернул в <а>-->
-        <a class="index-link" href="index.html"><img class="header-logo" src="/images/logo.png" alt="dlk kompany logo" width="100" height="52"></a>
+        <a class="index-link" href="/index.html"><img class="header-logo" src="/images/logo.png" alt="dlk company logo" width="100" height="52"></a>
         <nav class="header-nav">
             <ul class="header-nav-list">
-                <li class="header-nav-link"><a href="#">Blog</a></li>
-                <li class="header-nav-link"><a href="/catalog.html">Catalog</a></li>
-                <li class="header-nav-link"><a href="#">About us</a></li>
+                <li class="header-nav-link"><a class="nav-link" href="/pages/blog.html">Blog</a></li>
+                <li class="header-nav-link"><a class="nav-link" href="/pages/catalog.html">Catalog</a></li>
+                <li class="header-nav-link"><a class="nav-link" href="#">About us</a></li>
             </ul>
         </nav>
-        <button class="button-search" type="button"><img src="/images/search-icon.png" alt="site search" width="17" height="18"></button>
-        <a class="button-contact" href="/contact-us.html">Contact us</a>
+        <img src="/images/search-icon.png" alt="site search" width="17" height="18">
+        <a class="button-contact" href="/pages/contact-us.html">Contact us</a>
     </header>
     <main>
     <section>
@@ -27,23 +31,23 @@
             <img src="/images/breadcrumbs-vector.png" alt="breadcrumbs vector" width="8" height="12">
             <p class="active-page">Contact us</p>
         </div>
-        <form class="contact-form" name="user-message" method="POST">
+        <form class="contact-form" name="user-message" action="https://echo.htmlacademy.ru" method="POST">
             <fieldset class="contact-form-inputs">
-                <label class="contact-form-name">Name
+                <label class="contact-form-name contact-form-label">Name
                     <input class="contact-user-name" type="text" placeholder="Ivan Ivanov">
                 </label>
                 <label class="contact-form-phone">Phone
-                    <input class="contact-user-form" type="text">
+                    <input class="contact-user-form contact-form-label" type="text">
                 </label>
-                <label class="contact-form-email">Email
+                <label class="contact-form-email contact-form-label">Email
                     <input class="contact-user-email" type="email">
                 </label>
-                <label class="contact-form-message" for="contact-user-message">Message</label>
+                <label class="contact-form-message contact-form-label" for="contact-user-message">Message</label>
                 <textarea class="contact-user-message" name="user-message" id="contact-user-message" cols="80" rows="6"></textarea>
-                <label class="contact-form-processing">
+                <label class="contact-form-processing contact-form-label">
                     <input class="contact-user-processing" type="checkbox" checked>By clicking on the button, you consent to the processing of your personal data
                 </label>
-                <button class="contact-subscribe" type="submit">Submit</button>
+                <button class="contact-subscribe button" type="submit">Submit</button>
             </fieldset>
         </form>
     </section>
@@ -85,11 +89,11 @@
                 <!--Комментарий от куратора:"тут не должно быть списка. в список объединяются однотипные элементы" (вероятно речь идет о форме и соц кнопках)-->
                 <!--Комментарий от куратора (по поводу формы ввода емейла): "добавь тег form и после тег button этого пока достаточно"-->
                 <form name="user-subscribe-form" method="POST" action="https://echo.htmlacademy.ru">
-                    <input id="user-email"
+                    <input class="join-user-email" id="user-email"
                         type="text"
                         name="email"
                         placeholder="Email">
-                    <button class="button-subscribe" type="submit">Join</button>
+                    <button class="button button-subscribe" type="submit">Join</button>
                 </form>
                 <ul class="footer-socials-items">
                     <!--Временно размечаю как ссылки на .png картинки, но должны быть .svg -> на 4-м или 5-м занятии узнаем как это делать-->
@@ -113,7 +117,7 @@
                 </ul>
             </li>
             <li class="footer-bottom-item"><p class="footer-and-text">Copyright © 2018 Dlk • Design life kids</p></li>
-            <li class="footer-bottom-item"><p class="footer-and-text">Web design — Direct line development</p></li>
+            <li class="footer-bottom-author"><p class="footer-and-text">Web design — Direct line development</p></li>
         </ul>
     </footer>
     
