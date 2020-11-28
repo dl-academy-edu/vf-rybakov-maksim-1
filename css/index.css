@@ -1,13 +1,29 @@
     /*slider*/
 
-    .slider {
+    .slider-wrapper {
+        position: relative;
+    }
+
+    .slider-image {
+        position: absolute;
+        z-index: 1;
+        right: 100px;
+    }
+
+    .slider-wrapper-padding {
+        padding-top: 89px;
+    }
+
+    .slider-information-wrapper {
         display: flex;
+        padding-top: 0px;
+        padding-bottom: 89px;
+        background-color: #EEE4DB;
     }
 
     .slider-information {
         display: flex;
-        margin-top: 89px;
-        background-color: #EEE4DB;
+        margin-top: 0px;
     }
 
     .slider-pagination {
@@ -26,10 +42,6 @@
     .slider-page-buttons {
         margin: 10px 0 0 0;
         padding: 0;
-    }
-
-    .slider-page {
-
     }
     
     .slider-active-page {
@@ -52,6 +64,7 @@
 
     .slider-title {
         margin: 0;
+        width: 307px;
         font-family: Montserrat;
         font-style: normal;
         font-weight: bold;
@@ -62,11 +75,22 @@
     }
     
     .slider-description-article {
+        margin-bottom: 20px;
+        width: 307px;
         font-family: Crimson Text;
         font-style: italic;
         font-size: 20px;
         line-height: 25px;
         color: #1E0606;
+    }
+
+    .popup-button-link {
+        display: block;
+        padding-top: 9px;
+        padding-bottom: 9px;
+        width: 161px;
+        align-items: center;
+        text-align: center;
     }
     
     .slider-benefits {
@@ -92,41 +116,69 @@
         text-transform: uppercase;
         color: #1E0606;
     }
+
+    .category-list {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0;
+        padding: 0;
+        margin-bottom: -20px;
+        margin-right: -20px;
+    }
+
+    .category-card {
+        display: flex;
+        align-items: center;
+        min-height: 270px;
+        margin-bottom: 20px;
+        margin-right: 20px;
+    }
     
     .category-card-title {
+        display: block;
+        margin: auto;
         font-family: Montserrat;
         font-weight: bold;
         font-size: 26px;
         line-height: 32px;
         text-decoration: none;
         text-transform: uppercase;
+        text-align: center;
         color: #FFFFFF;
+        width: 192px;
     }
 
-    .category-list {
-        display: flex;
-        margin: 0;
-        padding: 0;
-    }
-    
-    .block-description {
-        color: #1E0606;
-    }
     
     .first-card-block {
+        width: 280px;
         background-color: #DBE4DB;
+        background-image: url(/images/apparel-kids.png);
+        background-repeat: no-repeat;
+        background-position: center center;
     }
     
     .second-card-block {
+        width: 280px;
         background-color: #EADDD3;
+        background-image: url(/images/holiday-shop.png);
+        background-repeat: no-repeat;
+        background-position: center center
     }
     
     .third-card-block {
+        width: 280px;
         background-color: #f8dae3;
+        background-image: url(/images/toys.png);
+        background-repeat: no-repeat;
+        background-position: center center
     }
     
     .fourth-card-block {
+        width: 280px;
         background-color: #D5D4E1;
+        background-image: url(/images/accessories.png);
+        background-repeat: no-repeat;
+        background-position: center center
     }
 
     .category-pagination {
@@ -134,13 +186,19 @@
         margin-top: 33px;
     }
 
-    .category-control {
+    .category-pagination-control {
         margin-right: 6px;
+        width: 37px;
+        height: 37px;
+        border: 0;
+        background-color: rgba(112, 187, 220, 0.2);;
     }
 
-    .category-description {
+    .category-pagination-description {
+        margin: 0;
         margin-left: 14px;
         width: 580px;
+        color: #1E0606;
     }
     
         /*Service block*/
@@ -159,10 +217,13 @@
         }
 
         .service-title {
+            margin-top: 30px;
+            margin-bottom: 6px;
             margin-left: 60px;
         }
 
     .service-list {
+        margin: 0;
         padding: 0;
         font-family: Crimson Text;
         font-style: italic;
@@ -172,46 +233,91 @@
     }
     
     .active-service-list {
+        margin-right: 214px;
+        margin-bottom: 11px;
+        padding-top: 11px;
+        padding-bottom: 11px;
         padding-left: 60px;
         font-weight: bold;
-        
         background-color: rgba(112, 187, 220, 0.2);;
     }
 
     .hidden-service-list {
         margin-left: 60px;
+        margin-bottom: 22px;
     }
 
     .services-description {
+        margin-top: 8px;
         margin-left: 60px;
+        margin-bottom: 7px;
     }
     
     .service-button {
-        margin: 26px 0 0 60px;
+        display: block;
+        margin: 19px 331px 0 60px;
+        padding: 9px 22px;
     }
 
         /*partners*/
 
-        .partners {
-            margin-top: 90px;
-        }
+    .partners {
+        margin-top: 90px;
+    }
 
-        .partners-list {
-            display: flex;
-            padding: 0;
-            align-items: center;
-            justify-content: space-between;
-        }
-
+    .partners-list {
+        display: flex;
+        padding: 0;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
         /*About us*/
     
-        .about-us {
-            display: flex;
-            margin-top: 90px;
-        }
+    .about-us {
+        display: flex;
+        margin-top: 116px;
+        margin-bottom: 147px;
+    }
 
+    .left-wrapper {
+        position: relative;
+        margin-right: 57px;
+    }
+
+    .about-us-left {
+        padding-top: 31px;
+        padding-left: 30px;
+        padding-bottom: 35px;
+        background-color: #E1F0F7;
+    }
+
+    .right-wrapper {
+        position: relative;
+        margin-right: 37px;
+    }
+
+    .abuot-us-right {
+        padding-top: 31px;
+        padding-left: 30px;
+        padding-bottom: 82px;
+        background-color: #E1F0F7;;
+    }
+
+    .about-us-title {
+        position: absolute;
+        top: -26px;
+        margin: 0px;
+        font-family: Montserrat;
+        font-weight: bold;
+        font-size: 38px;
+        line-height: 46px;
+        text-transform: uppercase;
+        color: #1E0606;
+    }
 
     .about-us-subtitle {
+        margin: 0;
         font-family: Crimson Text;
         font-style: italic;
         font-weight: normal;
@@ -219,6 +325,22 @@
         line-height: 32px;
         color: #1E0606;
         text-transform: capitalize;
+    }
+
+    .about-us-description {
+        margin: 0;
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+
+    .about-us-button {
+        display: block;
+        margin-right: 390px;
+        padding: 9px 22px;
+    }
+
+    .about-us-map {
+        position: absolute;
     }
 
     /*Index bottom form*/
