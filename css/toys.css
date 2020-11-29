@@ -22,6 +22,26 @@
 
 
 /*pagination block*/
+
+.pagination-wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 3px;
+    margin-left: 3px;
+}
+
+.pagination-control {
+    border: none;
+    background: none;
+}
+
+.blog-card-pagination {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 36px;
+    padding: 0;
+}
+
 .blog-number {
     font-family: Montserrat;
     font-weight: bold;
@@ -29,6 +49,10 @@
     line-height: 20px;
     text-transform: uppercase;
     text-decoration: none;
+    padding: 0;
+    border: 0;
+    background: none;
+    width: 74px;
 }
 
 .blog-number-active {

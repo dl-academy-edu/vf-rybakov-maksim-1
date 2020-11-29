@@ -36,6 +36,7 @@ body {
     text-decoration: none;
     color: #FFFFFF;
     border: 0;
+    cursor: pointer;
 }
 
 ul {
@@ -84,11 +85,19 @@ ul {
 }
 
 .nav-link {
-    font-weight: bold;
+    font-weight: normal;
     font-size: 14px;
     line-height: 19px;
     text-decoration: none;
     color: black;
+}
+
+.button-search {
+    padding: 0;
+    padding-top: 5px;
+    border: none;
+    background: none;
+    cursor: pointer;
 }
 
 .header-search {
@@ -107,6 +116,7 @@ ul {
 /*top main*/
 
 .page-title {
+    padding-top: 20px;
     font-family: Montserrat;
     font-weight: bold;
     font-size: 40px;
@@ -115,7 +125,17 @@ ul {
     color: #1E0606;
 }
 
-.home-page-inactive {
+/*breadcrumbs-block*/
+
+.breadcrumbs-block {
+    display: flex;
+    margin-top: 15px;
+}
+
+.breadcrumbs-page-inactive {
+    position: relative;
+    margin: 0;
+    margin-right: 48px;
     font-family: Crimson Text;
     font-style: italic;
     font-size: 20px;
@@ -123,13 +143,31 @@ ul {
     color: #1E0606;
 }
 
-.active-page {
+.breadcrumb-second-page::after {
+    content: url(/images/breadcrumbs-vector.png);
+    position: absolute;
+    left: -28px;
+}
+
+
+.breadcrumbs-active-page {
+    margin: 0;
     font-family: Crimson Text;
     font-style: italic;
     font-size: 20px;
     line-height: 25px;
     color: #1E0606;
     opacity: 0.5;
+}
+
+.breadcrumbs-active-wrapper {
+    position: relative;
+}
+
+.breadcrumbs-active-wrapper::before {
+    content: url(/images/breadcrumbs-vector.png);
+    position: absolute;
+    left: -28px;
 }
 
 /*Footer*/
@@ -199,6 +237,11 @@ ul {
 .button-subscribe {
     position: absolute;
     padding: 6px 22px;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 22px;
     line-height: 22px;
 }
 
@@ -212,27 +255,24 @@ ul {
 }
 
 .footer-socials-link {
-    position: relative;
     margin: 0;
     margin-right: 10px;
 }
 .fb-logo {
-    position: absolute;
-    top: -5px;
-    left: 10px;
 }
-.twitter-logo {
-    position: absolute;
-    top: -7px;
-    left: 8px;
+.social-logo {
+    width: 30px;
+    height: 30px;
+    line-height: 35px;
+    background: #666666;
+    margin: 0;
+    margin-right: 10px;
+    border-radius: 50%;
+    text-align: center;
 }
 .pinterest-logo {
-    position: absolute;
-    top: -7px;
-    left: 8px;
 }
-.fb-logo {
-    position: absolute;
+.instagram-logo {
 }
 
 
@@ -258,9 +298,7 @@ ul {
 
 .footer-and-text {
     margin: 0;
-}
-
-.footer-bottom-author {
+    text-decoration: none;
     color: #A2A2A2;
 }
 

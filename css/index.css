@@ -2,17 +2,19 @@
 
     .slider-wrapper {
         position: relative;
+        margin-top: 129px;
     }
 
     .slider-image {
         position: absolute;
         z-index: 1;
         right: 100px;
+        bottom: 0;
     }
 
-    .slider-wrapper-padding {
+    /**.slider-wrapper-padding {
         padding-top: 89px;
-    }
+    }**/
 
     .slider-information-wrapper {
         display: flex;
@@ -27,7 +29,8 @@
     }
 
     .slider-pagination {
-        margin: 17px 44px 0 28px;
+        margin: 17px 3px 0 28px;
+        width: 102px;
     }
     
         .slider-page-number {
@@ -194,6 +197,10 @@
         background-color: rgba(112, 187, 220, 0.2);;
     }
 
+    .category-pagination-img {
+        margin-top: 5px;
+    }
+
     .category-pagination-description {
         margin: 0;
         margin-left: 14px;
@@ -293,8 +300,7 @@
     }
 
     .right-wrapper {
-        position: relative;
-        margin-right: 37px;
+        margin-right: 57px;
     }
 
     .abuot-us-right {
@@ -305,9 +311,9 @@
     }
 
     .about-us-title {
-        position: absolute;
-        top: -26px;
         margin: 0px;
+        margin-top: -56px;
+        min-width: 543px;
         font-family: Montserrat;
         font-weight: bold;
         font-size: 38px;

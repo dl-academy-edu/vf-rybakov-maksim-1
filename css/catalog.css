@@ -1,46 +1,117 @@
+
+.catalog-container {
+    margin: 0 auto;
+    max-width: 1400px;
+    padding: 0 310px;
+}
+
+.category-cards {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    margin-top: 50px;
+    padding: 0;
+}
+
+.category-card {
+    display: flex;
+    align-items: center;
+    min-height: 270px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+}
+
+.category-card:nth-child(6n+1) {
+    margin-left: -200px;
+}
+
+.category-card:nth-child(6n+6) {
+    margin-right: -150px;
+}
+.category-card:nth-child(1n+4) {
+    margin-top: 3px;
+}
+
 .category-card-title {
+    display: block;
+    margin: auto;
     font-family: Montserrat;
     font-weight: bold;
     font-size: 26px;
     line-height: 32px;
     text-decoration: none;
     text-transform: uppercase;
+    text-align: center;
     color: #FFFFFF;
+    width: 192px;
 }
 
 .first-card-block {
+    width: 280px;
     background-color: #DBE4DB;
+    background-image: url(/images/apparel-kids.png);
+    background-repeat: no-repeat;
+    background-position: center center;
 }
 
 .second-card-block {
+    width: 280px;
     background-color: #EADDD3;
+    background-image: url(/images/holiday-shop.png);
+    background-repeat: no-repeat;
+    background-position: center center
 }
 
 .third-card-block {
+    width: 280px;
     background-color: #f8dae3;
+    background-image: url(/images/toys.png);
+    background-repeat: no-repeat;
+    background-position: center center
 }
 
 .fourth-card-block {
+    width: 280px;
     background-color: #D5D4E1;
+    background-image: url(/images/accessories.png);
+    background-repeat: no-repeat;
+    background-position: center center
 }
 
 .fifth-card-block {
+    width: 280px;
     background-color: #F3D0DB;
+    background-image: url(/images/pink-flamingo.png);
+    background-repeat: no-repeat;
+    background-position: center center
 }
 
 .sixth-card-block {
+    width: 280px;
     background-color: #E5EAF8;
+    background-image: url(/images/pink-shirt.png);
+    background-repeat: no-repeat;
+    background-position: center center
+}
+
+.product-description {
+    margin-bottom: 55px;
 }
 
 .product-description-title {
+    margin: 0;
+    margin-top: 35px;
+    margin-bottom: 10px;
     font-family: Montserrat;
-font-weight: bold;
-font-size: 38px;
-line-height: 46px;
-text-transform: uppercase;
-color: #1E0606;
+    font-weight: bold;
+    font-size: 38px;
+    line-height: 46px;
+    text-transform: uppercase;
+    color: #1E0606;
 }
 
 .product-description-text {
+    margin: 0;
+    margin-top: 15px;
     color: #1E0606;
 }

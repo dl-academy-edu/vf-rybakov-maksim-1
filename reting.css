@@ -37,6 +37,7 @@
     top: 0;
     left: 0;
     margin: 0;
+    margin-right: 3px;
     height: 16px;
     background-size: 16px auto;
     font-size: inherit;
@@ -79,4 +80,31 @@
 .rating-star:nth-of-type(5) {
     z-index: 1;
     width: 80px;
+}
+
+
+
+/*fieldset*/
+.fieldset {
+    border: none;
+    background-color: tomato;
+}
+.title {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 38px;
+    line-height: 46px;
+    text-transform: uppercase;
+    color: #1E0606;
+}
+
+
+/*second fieldset*/
+
+.second-fieldset { margin:0; }
+legend:after { 
+    position:absolute;
+    content: attr(secondlegend);
+    top: 305px;
 }

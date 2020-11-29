@@ -10,7 +10,7 @@
     <link rel="stylesheet" type="text/css" href="/css/contact-us.css">
 </head>
 <body>
-    <header class="header">
+    <header class="header container">
         <!--Комментарий от куратора:"Логотип сайта должен быть обернут в тег и вести на главную страницу", обернул в <а>-->
         <a class="index-link" href="/index.html"><img class="header-logo" src="/images/logo.png" alt="dlk company logo" width="100" height="52"></a>
         <nav class="header-nav">
@@ -20,16 +20,17 @@
                 <li class="header-nav-link"><a class="nav-link" href="#">About us</a></li>
             </ul>
         </nav>
-        <img src="/images/search-icon.png" alt="site search" width="17" height="18">
+        <img class="header-search" src="/images/search-icon.png" alt="site search" width="17" height="18">
         <a class="button-contact" href="/pages/contact-us.html">Contact us</a>
     </header>
     <main>
     <section>
         <h1 class="page-title">Contact  Us</h1>
         <div class="breadcrumbs-block">
-            <p class="home-page-inactive">Home</p>
-            <img src="/images/breadcrumbs-vector.png" alt="breadcrumbs vector" width="8" height="12">
-            <p class="active-page">Contact us</p>
+            <p class="breadcrumbs-page-inactive">Home</p>
+            <div class="breadcrumbs-active-wrapper">
+                <p class="breadcrumbs-active-page">Contact us</p>
+            </div>
         </div>
         <form class="contact-form" name="user-message" action="https://echo.htmlacademy.ru" method="POST">
             <fieldset class="contact-form-inputs">
@@ -58,12 +59,10 @@
         <p class="form-description-slogan">An expert is waiting to help you!</p>
     </section>
     </main>
-    <footer class="footer">
+    <footer class="footer container">
         <ul class="footer-columns">
             <li class="footer-column-navigation">
-                <!--Комментарий о куратора: "Заголовок здесь и далее должен быть вынесен из элемента списка на уровень выше", все перенес (эх и муторное это дело оказалось)-->
                 <h2 class="footer-column-title">Navigation</h2>
-                <!--Тут тегом размещал линию, но куратор прокомментировал так: "Эту линию нужно будет прописывать в стилях. Ее не должно быть в html. Здесь и в следующих элементах так же", поэтому код линии удалил-->
                 <ul class="footer-column-items">
                     <li class="footer-column-item"><a class="footer-item-link" href="#">About us</a></li>
                     <li class="footer-column-item"><a class="footer-item-link" href="#">Blog</a></li>
@@ -86,40 +85,81 @@
             </li>
             <li class="footer-column-connect">
                 <h2 class="footer-column-title">Connect</h2>
-                <!--Комментарий от куратора:"тут не должно быть списка. в список объединяются однотипные элементы" (вероятно речь идет о форме и соц кнопках)-->
-                <!--Комментарий от куратора (по поводу формы ввода емейла): "добавь тег form и после тег button этого пока достаточно"-->
                 <form name="user-subscribe-form" method="POST" action="https://echo.htmlacademy.ru">
                     <input class="join-user-email" id="user-email"
                         type="text"
                         name="email"
                         placeholder="Email">
-                    <button class="button button-subscribe" type="submit">Join</button>
-                </form>
+                    <button class="button button-subscribe" type="submit">join</button>
+                    
+                    </form>
                 <ul class="footer-socials-items">
-                    <!--Временно размечаю как ссылки на .png картинки, но должны быть .svg -> на 4-м или 5-м занятии узнаем как это делать-->
-                    <li class="footer-socials-item"><a class="footer-socials-link" href="#"><img src="fb.png" alt="fb link"></a></li>
-                    <li class="footer-socials-item"><a class="footer-socials-link" href="#"><img src="twitter.png" alt="twitter link"></a></li>
-                    <li class="footer-socials-item"><a class="footer-socials-link" href="#"><img src="pinterest.png" alt="pinterest link"></a></li>
-                    <li class="footer-socials-item"><a class="footer-socials-link" href="#"><img src="instagram.png" alt="instagram link"></a></li>
+                    <li class="footer-socials-item">
+                        <a class="footer-socials-link" href="#">
+                            <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M0 15C0 6.71573 6.71573 0 15 0C23.2843 0 30 6.71573 30 15C30 23.2843 23.2843 30 15 30C6.71573 30 0 23.2843 0 15Z" fill="#666666"/>
+                                </svg>
+                            <div class="fb-logo">
+                                <svg width="9" height="16" viewBox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M8.55271 3.36723H6.29671C6.03071 3.36723 5.73372 3.71723 5.73372 4.18523V5.81423H8.55271V8.13523H5.73372V15.1052H3.07071V8.13523H0.657715V5.81423H3.07071V4.44723C3.07071 2.48823 4.43171 0.894226 6.29671 0.894226H8.55271V3.36723Z" fill="white"/>
+                                </svg>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="footer-socials-item">
+                        <a class="footer-socials-link" href="#">
+                            <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M0 15C0 6.71573 6.71573 0 15 0C23.2843 0 30 6.71573 30 15C30 23.2843 23.2843 30 15 30C6.71573 30 0 23.2843 0 15Z" fill="#666666"/>
+                                </svg>
+                            <div class="twitter-logo">
+                                <svg width="15" height="13" viewBox="0 0 15 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M13.1006 3.28912C13.1056 3.41612 13.1096 3.54312 13.1096 3.67212C13.1096 7.57612 10.1366 12.0781 4.70258 12.0781C3.03458 12.0781 1.48058 11.5881 0.173584 10.7501C0.406584 10.7771 0.641584 10.7911 0.879584 10.7911C2.26358 10.7911 3.53758 10.3181 4.54858 9.52512C3.25558 9.50212 2.16558 8.64812 1.78758 7.47512C1.96858 7.51012 2.15458 7.52712 2.34458 7.52712C2.61358 7.52712 2.87458 7.49212 3.12258 7.42412C1.77158 7.15212 0.751584 5.95912 0.751584 4.52712V4.49012C1.15058 4.71112 1.60758 4.84412 2.09158 4.85912C1.29858 4.33012 0.777584 3.42612 0.777584 2.40012C0.777584 1.85912 0.922584 1.35212 1.17658 0.916122C2.63258 2.70312 4.81058 3.87912 7.26558 4.00212C7.21558 3.78512 7.19058 3.56012 7.19058 3.32812C7.19058 1.69712 8.51258 0.375122 10.1446 0.375122C10.9936 0.375122 11.7616 0.732122 12.2996 1.30712C12.9736 1.17612 13.6056 0.930122 14.1766 0.590122C13.9556 1.28112 13.4886 1.85912 12.8766 2.22512C13.4746 2.15412 14.0446 1.99612 14.5756 1.76012C14.1776 2.35212 13.6776 2.87312 13.1006 3.28912Z" fill="white"/>
+                                    </svg>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="footer-socials-item">
+                        <a class="footer-socials-link" href="#">
+                            <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M0 15C0 6.71573 6.71573 0 15 0C23.2843 0 30 6.71573 30 15C30 23.2843 23.2843 30 15 30C6.71573 30 0 23.2843 0 15Z" fill="#666666"/>
+                                </svg>
+                            <div class="pinterest-logo">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M8.00047 0C3.58252 0 0 3.58158 0 8.00047C0 11.2754 1.97001 14.0902 4.78956 15.3273C4.76698 14.7694 4.78579 14.0977 4.92785 13.49C5.08214 12.8408 5.95708 9.1313 5.95708 9.1313C5.95708 9.1313 5.70212 8.62045 5.70212 7.865C5.70212 6.6796 6.38984 5.79432 7.24502 5.79432C7.97225 5.79432 8.3241 6.34092 8.3241 6.99571C8.3241 7.7267 7.85747 8.82084 7.61757 9.83407C7.41718 10.6836 8.04281 11.3751 8.88011 11.3751C10.3957 11.3751 11.4165 9.42859 11.4165 7.12177C11.4165 5.36908 10.2358 4.05668 8.08796 4.05668C5.66167 4.05668 4.14982 5.86582 4.14982 7.88663C4.14982 8.5847 4.35491 9.07579 4.67666 9.45587C4.82531 9.6318 4.84506 9.70142 4.79144 9.90275C4.75381 10.0486 4.66537 10.4042 4.62868 10.5444C4.57506 10.7466 4.41136 10.82 4.22885 10.7448C3.11025 10.2885 2.58999 9.0645 2.58999 7.68813C2.58999 5.41612 4.50638 2.68972 8.30717 2.68972C11.3619 2.68972 13.3724 4.90151 13.3724 7.27324C13.3724 10.4117 11.6282 12.7562 9.05509 12.7562C8.19239 12.7562 7.37955 12.2895 7.10108 11.7599C7.10108 11.7599 6.63633 13.6029 6.53848 13.9585C6.36914 14.5747 6.03704 15.1919 5.73317 15.6717C6.45287 15.8843 7.21303 16 8.00047 16C12.4184 16 16 12.4184 16 8.00047C16 3.58158 12.4184 0 8.00047 0Z" fill="white"/>
+                                    </svg>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="footer-socials-item">
+                        <a class="footer-socials-link" href="#">
+                            <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M0 15C0 6.71573 6.71573 0 15 0C23.2843 0 30 6.71573 30 15C30 23.2843 23.2843 30 15 30C6.71573 30 0 23.2843 0 15Z" fill="#666666"/>
+                                </svg>
+                            <div class="instagram-logo">
+                            </div>
+                        </a>
+                    </li>
                 </ul>
             </li>
         </ul>
         <ul class="footer-bottom">
             <li class="footer-bottom-item">
-                <p class="footer-bottom-text">Company rating</p>
-                <ul class="footer-rating">
-                    <!--Звездочки должны быть формата .svg, но узнаю как вставлять на 4-м или 5-м занятии, поэтому пока в .png-->
-                    <li class="footer-bottom-stars"><img class="rating-star" src="/images/star.png" alt="rating" width="17" height="16"></li>
-                    <li class="footer-bottom-stars"><img class="rating-star" src="/images/star.png" alt="rating" width="17" height="16"></li>
-                    <li class="footer-bottom-stars"><img class="rating-star" src="/images/star.png" alt="rating" width="17" height="16"></li>
-                    <li class="footer-bottom-stars"><img class="rating-star" src="/images/star.png" alt="rating" width="17" height="16"></li>
-                    <li class="footer-bottom-stars"><img class="rating-star" src="/images/star.png" alt="rating" width="17" height="16"></li>
-                </ul>
+                <fieldset class="rating">
+                    <legend class="rating-legend">Company Rating</legend>
+                    <div class="rating-group-wrapper">
+                        <div class="rating-group">
+                            <input class="rating-star" type="radio" name="star" value="1" aria-label="awful">
+                            <input class="rating-star" type="radio" name="star" value="2" aria-label="passably">
+                            <input class="rating-star" type="radio" name="star" value="3" aria-label="fine">
+                            <input class="rating-star" type="radio" name="star" value="4" aria-label="OK">
+                            <input class="rating-star" type="radio" name="star" value="5" aria-label="excellent">    
+                        </div>
+                    </div>
+                </fieldset>
             </li>
             <li class="footer-bottom-item"><p class="footer-and-text">Copyright © 2018 Dlk • Design life kids</p></li>
-            <li class="footer-bottom-author"><p class="footer-and-text">Web design — Direct line development</p></li>
+            <li class="footer-bottom-item footer-bottom-author"><p class="footer-and-text">Web design — Direct line development</p></li>
         </ul>
     </footer>
-    
 </body>
 </html>
