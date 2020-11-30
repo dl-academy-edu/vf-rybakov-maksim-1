@@ -143,10 +143,11 @@ ul {
     color: #1E0606;
 }
 
-.breadcrumb-second-page::after {
+.breadcrumbs-page-inactive::before {
     content: url(/images/breadcrumbs-vector.png);
     position: absolute;
-    left: -28px;
+    top: 0;
+    right: -28px;
 }
 
 
@@ -158,16 +159,6 @@ ul {
     line-height: 25px;
     color: #1E0606;
     opacity: 0.5;
-}
-
-.breadcrumbs-active-wrapper {
-    position: relative;
-}
-
-.breadcrumbs-active-wrapper::before {
-    content: url(/images/breadcrumbs-vector.png);
-    position: absolute;
-    left: -28px;
 }
 
 /*Footer*/
@@ -212,8 +203,15 @@ ul {
     text-decoration: none;
 }
 
-.user-subscribe-form {
+.column-connect-items {
+    padding: 0;
+}
+
+.column-connect-item {
     position: relative;
+}
+
+.user-subscribe-form {
     margin-top: 25px;
     height: 40px;
     border: none;
@@ -236,6 +234,8 @@ ul {
 
 .button-subscribe {
     position: absolute;
+    top: 0;
+    right: 41px;
     padding: 6px 22px;
     font-family: Open Sans;
     font-style: normal;
@@ -315,6 +315,7 @@ ul {
 .rating-legend {
     position: absolute;
     top: -3px;
+    left: 0;
     margin-bottom: 0;
     padding: 0;
 }

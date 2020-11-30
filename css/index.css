@@ -1,13 +1,19 @@
     /*slider*/
 
+    .slider {
+        padding: 89px 110px 0 110px;
+    }
+    
     .slider-wrapper {
         position: relative;
-        margin-top: 129px;
+        margin-top: 0;
+        padding: 0;
+        padding-top: 0;
+        background-color: #EEE4DB;
     }
 
     .slider-image {
         position: absolute;
-        z-index: 1;
         right: 100px;
         bottom: 0;
     }
@@ -42,8 +48,14 @@
         color: rgba(30, 6, 6, 0.05);
     }
 
+    .slider-page {
+        margin: 0;
+        padding: 0;
+        line-height: 14px;
+    }
+
     .slider-page-buttons {
-        margin: 10px 0 0 0;
+        margin: -4px 0 0 0;
         padding: 0;
     }
     
@@ -63,6 +75,7 @@
     
     .slider-description {
         margin: 89px 5px 0 0;
+        padding-bottom: 89px;
     }
 
     .slider-title {
@@ -304,6 +317,7 @@
     }
 
     .abuot-us-right {
+        position: relative;
         padding-top: 31px;
         padding-left: 30px;
         padding-bottom: 82px;
@@ -347,6 +361,9 @@
 
     .about-us-map {
         position: absolute;
+        bottom: -114px;
+        left: 30px;
+
     }
 
     

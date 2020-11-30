@@ -1,25 +1,134 @@
+
+.contact-main {
+    display: flex;
+    margin-top: 50px;
+    margin-bottom: 60px;
+}
+
+
 /*contact form*/
+
+.contact-wrapper {
+    margin-right: 120px;
+}
+
 .contact-form {
+    margin: 0;
     background-color: #E5EAF8;
 }
 
 .contact-form-inputs {
+    width: 680px;
+    margin: 0;
+    padding: 0;
     border-width: 0;
+    padding: 42px 40px;
+    background-color: #E5EAF8;
 }
 
-.contact-form-label {
-    font-size: 14px;
-    line-height: 19px;
-    color: #1E0606;
+.contact-form-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .contact-user-name {
+    width: 600px;
     font-size: 18px;
     line-height: 25px;
     color: #1E0606;
 }
 
+.contact-user-name::placeholder {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 25px;
+    color: #1E0606;
+}
+
+.label-wrapper input {
+    display: block;
+    margin-top: 3px;
+    margin-bottom: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    padding: 14px 20px 11px 20px;
+    min-height: 50px;
+}
+
+.contact-user-phone {
+    width: 290px;
+}
+
+.contact-user-email {
+    width: 290px;
+}
+
+.contact-user-message {
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    padding: 0;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    }
+
+    .contact-form-processing {
+        position: relative;
+        margin: 0;
+        padding-top: 2px;
+        padding-left: 34px;
+        font-family: Roboto;
+        font-size: 14px;
+        line-height: 16px;
+        color: #1E0606;
+    }
+
+    .contact-form-processing::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 19px;
+        height: 19px;
+        border: 2px solid #C29974;
+        box-sizing: border-box;
+        border-radius: 3px;
+    }
+
+    .contact-form-processing::after {
+        content: '';
+        position: absolute;
+        background-image: none;
+        top: 0;
+        left: 0;
+        width: 19px;
+        height: 19px;
+        border: 2px solid #C29974;
+        box-sizing: border-box;
+        border-radius: 3px;
+    }
+
+    .contact-user-processing:checked + .contact-form-processing::after {
+        background-image: url('/images/index-checkbox.png');
+        background-repeat: no-repeat;
+    }
+
+    .contact-subscribe {
+        display: block;
+        margin-top: 20px;
+        margin-right: 300px;
+        padding: 9px 22px;
+        text-transform: uppercase;
+        border: 0;
+    }
+
+
+/**Form description**/
+
 .form-description-text {
+    margin: 0;
+    margin-bottom: 20px;
     color: #1E0606;
 }
 
