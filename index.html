@@ -8,6 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,600;0,700;1,300;1,600;1,700&family=Open+Sans:wght@400;700&family=Roboto:ital@0;1&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="/css/stile.css">
     <link rel="stylesheet" type="text/css" href="/css/index.css">
+    <link rel="stylesheet" type="text/css" href="/css/form.css">
 </head>
 <body>
     <header class="header container">
@@ -220,29 +221,44 @@
             </ul>
         </div>
     </footer>
-    <section class="index-popup">
-        <h2 class="popup-form-title visually-hidden">Popup form</h2>
-        <form class="index-popup-form" id="popup" name="user-message" method="POST" action="https://echo.htmlacademy.ru">
-            <fieldset class="index-popup-inputs">
-                <label class="index-popup-name" for="popup-user-name">Name
-                    <input class="index-user-name" id="popup-user-name" type="text">
-                </label>
-                
-                <label class="index-popup-phone" for="popup-user-phone">Phone
-                    <input class="index-user-phone" id="popup-user-phone" type="text">
-                </label>
-                <label class="index-popup-email" for="popup-user-email">Email
-                    <input class="index-user-email" id="popup-user-email" type="email">
-                </label>
-                <label class="index-popup-message" for="popup-user-message">Message</label>
-                <textarea class="index-user-message" name="user-message" id="popup-user-message" cols="80" rows="6"></textarea>
-                
-                <label class="index-popup-processing">
-                    <input class="index-user-processing" type="checkbox">By clicking on the button, you consent to the processing of your personal data
-                </label>
-                <button class="popup-subscribe" type="submit">Submit</button>
-            </fieldset>
-        </form>
-    </section>
+    <div class="index-popup-overlay">
+        <section class="index-popup">
+            <h2 class="popup-form-title visually-hidden">Popup form</h2>
+            <form class="index-popup-form" id="popup" name="user-message" method="POST" action="https://echo.htmlacademy.ru">
+                <fieldset class="index-popup-inputs">
+                    <div class="popup-form-wrapper">
+                        <div class="label-wrapper">
+                            <label class="index-popup-name input-label" for="popup-user-name">Name</label>
+                            <input class="index-user-name" id="popup-user-name" type="text">
+                        </div>
+                        
+                        <div class="label-wrapper">
+                            <label class="index-popup-phone input-label" for="popup-user-phone">Phone</label>
+                            <input class="index-user-phone" id="popup-user-phone" type="text">
+                        </div>
+                        
+                        <div class="label-wrapper">
+                            <label class="index-popup-email input-label" for="popup-user-email">Email</label>
+                            <input class="index-user-email" id="popup-user-email" type="email">
+                        </div>
+                        
+                        <div class="label-wrapper">
+                            <label class="index-popup-message input-label" for="popup-user-message">Message</label>
+                            <textarea class="index-user-message" name="user-message" id="popup-user-message" cols="80" rows="6"></textarea>
+                        </div>
+                        
+                        <div class="label-wrapper">
+                            <input class="index-user-consent visually-hidden" id="user-consent" type="checkbox">
+                            <label class="index-popup-consent" for="user-consent">By clicking on the button, you consent to the processing of your personal data</label>
+                        </div>
+                        
+                        <button class="button popup-subscribe" type="submit">Submit</button>
+                    </div>
+                </fieldset>
+            </form>
+            <button type="button" class="button-close"><span class="visually-hidden">Close form</span></button>
+        </section>
+    </div>
+    <script src="/js/popup-form.js"></script>
 </body>
 </html>

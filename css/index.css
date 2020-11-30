@@ -349,41 +349,8 @@
         position: absolute;
     }
 
+    
+
     /*Index bottom form*/
 
-.index-popup {
-    background-color: #E5EAF8;
-}
-
-.index-popup-inputs {
-    border-width: 0;
-}
-
-.index-popup-inputs label {
-    font-family: Roboto;
-    font-size: 14px;
-    line-height: 16px;
-    color: #1E0606;
-}
-
-.index-user-processing {
-    font-family: Roboto;
-    font-size: 14px;
-    line-height: 16px;
-    color: #1E0606;
-}
-
-.popup-subscribe {
-    text-transform: uppercase;
-    color: #E1E1E1;
-    border: 0;
-    background-color: #C1C1C1;
-}
-
-    /*index popup*/
-
-.index-popup {
-    width: 680px;
-    margin: 0 auto;
-}
 
