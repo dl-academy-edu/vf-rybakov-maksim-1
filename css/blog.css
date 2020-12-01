@@ -22,13 +22,26 @@
     color: #818181;
 }
 
+.announcement-link {
+    font-family: Montserrat;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 31px;
+    text-decoration: none;
+    color: #1E0606;
+}
+
 .blog-card-title {
     margin: 0;
     font-family: Montserrat;
     font-weight: bold;
     font-size: 24px;
     line-height: 31px;
+    text-decoration: none;
     color: #1E0606;
+}
+.blog-card-title:hover {
+    text-decoration: underline;
 }
 
 .blog-card-preview {

@@ -308,9 +308,19 @@
 }
 
 .goods-card {
+    position: relative;
     margin-right: 20px;
     padding-top: 10px;
     padding-bottom: 10px;
+}
+
+.user-attention {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    width: 207px;
+    height: 207px;
+    background-color: #E5EAF8;
 }
 
 .goods-description {

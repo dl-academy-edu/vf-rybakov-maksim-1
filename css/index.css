@@ -72,6 +72,12 @@
         background: #D6CAC2;
         border: none;
     }
+    .slider-hidden-page:hover {
+        width: 31px;
+        height: 3px;
+        background: rgba(30, 6, 6, 0.6);
+        border: none;
+    }
     
     .slider-description {
         margin: 89px 5px 0 0;
@@ -163,7 +169,9 @@
         color: #FFFFFF;
         width: 192px;
     }
-
+    .category-card-title:hover {
+        text-decoration: underline;
+    }
     
     .first-card-block {
         width: 280px;

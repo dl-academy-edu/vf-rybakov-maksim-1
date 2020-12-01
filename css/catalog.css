@@ -45,6 +45,9 @@
     color: #FFFFFF;
     width: 192px;
 }
+.category-card-title:hover {
+    text-decoration: underline;
+}
 
 .first-card-block {
     width: 280px;

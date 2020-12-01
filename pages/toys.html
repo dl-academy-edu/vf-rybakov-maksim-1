@@ -7,6 +7,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,600;0,700;1,300;1,600;1,700&family=Open+Sans:wght@400;700&family=Roboto:ital@0;1&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="/css/stile.css">
+    <link rel="stylesheet" type="text/css" href="/css/normalize.css">
     <link rel="stylesheet" type="text/css" href="/css/toys.css">
 </head>
 <body>
@@ -40,7 +41,7 @@
                     <div class="range cost-range">
                         <div class="field">
                             <div class="value left">0</div>
-                            <input type="range" min="0" max="500" value="100" steps="50">
+                            <input type="range" min="0" max="500" value="100" step="50">
                             <div class="value right">500</div>
                         </div>
                     </div>
@@ -49,20 +50,20 @@
                 <legend class="color-title details-block-title">Color</legend>
                 <ul class="form-color-list">
                     <li class="color-list">
-                        <input id="check black" type="checkbox" class="visually-hidden color-checkbox-input" checked>
-                        <label for="check black" class="color-checkbox-label">Black</label>
+                        <input id="check-black" type="checkbox" class="visually-hidden color-checkbox-input" checked>
+                        <label for="check-black" class="color-checkbox-label">Black</label>
                     </li>
                     <li class="color-list">
-                        <input id="check blue" type="checkbox" class="visually-hidden color-checkbox-input">
-                        <label for="check blue" class="color-checkbox-label">Blue</label>
+                        <input id="check-blue" type="checkbox" class="visually-hidden color-checkbox-input">
+                        <label for="check-blue" class="color-checkbox-label">Blue</label>
                     </li>
                     <li class="color-list">
-                        <input id="check green" type="checkbox" class="visually-hidden color-checkbox-input">
-                        <label for="check green" class="color-checkbox-label">Green</label>
+                        <input id="check-green" type="checkbox" class="visually-hidden color-checkbox-input">
+                        <label for="check-green" class="color-checkbox-label">Green</label>
                     </li>
                     <li class="color-list">
-                        <input id="check white" type="checkbox" class="visually-hidden color-checkbox-input">
-                        <label for="check white" class="color-checkbox-label">White</label>
+                        <input id="check-white" type="checkbox" class="visually-hidden color-checkbox-input">
+                        <label for="check-white" class="color-checkbox-label">White</label>
                     </li>
                 </ul>
             </fieldset>
@@ -103,6 +104,7 @@
         <h2 class="visually-hidden">Company goods</h2>
         <ul class="goods-list">
             <li class="goods-card">
+                <div class="user-attention">Learn more</div>
                 <a href="#"><img class="goods-img" src="/images/chair-cover.png" alt="chair cover" width="380" height="385"></a>
                 <p class="goods-description">Snarky bean bag chair cover</p>
                 <p class="goods-cost">$60.00 USD</p>
@@ -137,7 +139,7 @@
     <section class="container">
         <h2 class="visually-hidden">Page pagination</h2>
         <div class="pagination-wrapper">
-            <button class="button pagination-control"><img src="/images/left-arrow.png" alt="left arrow"></button>
+            <button class="button pagination-control"><img src="/images/left-arrow.png" alt="left arrow" width="13" height="26"></button>
             <ul class="blog-card-pagination">
                 <li class="blog-pagination-number">
                     <button class="button blog-number-active blog-number">1</button>
@@ -152,7 +154,7 @@
                     <button class="button blog-number-inactive blog-number">4</button>
                 </li>
             </ul>
-            <button class="button pagination-control"><img src="/images/right-arrow.png" alt="right arrow"></button>
+            <button class="button pagination-control"><img src="/images/right-arrow.png" alt="right arrow" width="13" height="26"></button>
         </div>
     </section>
     </main>
