@@ -2,21 +2,53 @@
 
 .goods-filter-form {
     margin-top: 50px;
+    padding-bottom: 42px;
     background-color: rgba(125, 151, 218, 0.2);
 }
 
 .details-goods {
     display: flex;
+    align-items: flex-start;
+}
+
+.form-cost-wrapper {
+    margin: 0;
+    margin-right: 108px;
+    padding: 0;
+}
+
+.form-color-wrapper {
+    margin: 0;
+    margin-right: 124px;
+    padding: 0;
+}
+
+.form-delivery-wrapper {
+    margin: 0;
+    margin-right: 69px;
+    padding: 0;
+}
+
+.form-amount-wrapper {
+    margin: 0;
+    padding: 0;
+    margin-right: 60px;
+}
+
+.details-form-border {
+    margin-top: 20px;
+    border: 0;
 }
 
 .details-block-title {
+    margin-bottom: 15px;
     font-weight: bold;
 }
 
 /**range stile**/
 .range{
     width: 188px;
-    padding-top: 79px;
+    padding-top: 15px;
 }
 
 .field{
@@ -46,7 +78,7 @@
     left: 174px;
 }
 
-.cost-title {
+.cost-title {  //див от Cost
     position: absolute;
     top: -47px;
     left: 0;
@@ -100,18 +132,197 @@
 }
 /**end range stile**/
 
-.details-form-border {
-    border-width: 0;
+
+.form-color-list {
+    margin: 0;
+    padding: 0;
+}
+
+/**checkbox style**/
+
+.color-checkbox-label {
+    position: relative;
+    padding-left: 28px;
+    margin-right: 33px;
+}
+
+.color-checkbox-label::before {
+    content: '';
+    position: absolute;
+    width: 19px;
+    height: 19px;
+    left: 0;
+    top: 0;
+    border: 2px solid #C29974;
+    box-sizing: border-box;
+    border-radius: 3px;
+}
+
+.color-checkbox-label::after {
+    content: '';
+    position: absolute;
+    background-image: none;
+    top: 0;
+    left: 0;
+    width: 19px;
+    height: 19px;
+    border: 2px solid #C29974;
+    box-sizing: border-box;
+    border-radius: 3px;
+}
+
+.color-checkbox-input:checked + .color-checkbox-label::after {
+    background-image: url('/images/toys-checkbox.png');
+    background-repeat: no-repeat;
+    background-color: #FFFFFF;
+}
+
+.color-list {
+    padding-bottom: 18px;
+}
+
+/**radio style Delivery**/
+
+.form-delivery-list {
+    margin: 0;
+    padding: 0;
+}
+
+.delivery-radio-label {
+    position: relative;
+    padding-left: 28px;
+    margin-right: 33px;
+}
+
+.delivery-radio-label::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #C29974;
+    border-radius: 50%;
+}
+
+.delivery-radio-label::after {
+    content: '';
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    width: 12px;
+    height: 12px;
+    background: #C29974;
+    border: 2px solid #C29974;
+    opacity: 0;
+    border-radius: 50%;
+}
+
+/** Фокус при наведении
+.delivery-radio-input:hover + .delivery-radio-label::before, 
+.delivery-radio-input:focus + .delivery-radio-label::before {
+    border: 2px solid rgba(255, 182, 18, 0.5);
+}
+**/
+
+.delivery-radio-input:checked+.delivery-radio-label::after {
+    opacity: 1;
+}
+
+.radio-list {
+    padding-bottom: 12px;
+}
+
+/**radio style Amount**/
+
+.form-amount-list {
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.amount-list {
+    position: relative;
+    width: 80px;
+}
+
+.amount-radio-label {
+    position: relative;
+    display: block;
+    padding: 0 auto;
+    margin: 0 auto;
+}
+
+.amount-radio-label::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 80px;
+    height: 35px;
+    background-color: #FFFFFF;
+}
+
+.amount-radio-label::after {
+    content: '';
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 80px;
+    height: 35px;
+    background-color: #F3D0DB;
+    opacity: 0;
+}
+
+.amount-radio-input:checked+.amount-radio-label::after {
+    opacity: 1;
+}
+
+.visuali-label {
+    display: block;
+}
+
+/**form button**/
+
+.details-goods-submit {
+    margin-top: 79px;
+    padding: 9px 22px;
+}
+
+
+/**end form**/
+
+/**Goods cards**/
+
+.company-goods {
+    margin-top: 50px;
+    margin-bottom: 75px;
+}
+
+.goods-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    margin-right: -20px;
+    padding: 0;
+}
+
+.goods-card {
+    margin-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 .goods-description {
     font-size: 14px;
     line-height: 19px;
     text-transform: uppercase;
+    text-align: center;
 }
 
 .goods-cost {
     font-weight: bold;
+    text-align: center;
 }
 
 
@@ -120,8 +331,10 @@
 .pagination-wrapper {
     display: flex;
     justify-content: space-between;
+    align-items: flex-start;
     margin-right: 3px;
     margin-left: 3px;
+    margin-bottom: 60px;
 }
 
 .pagination-control {
@@ -132,7 +345,8 @@
 .blog-card-pagination {
     display: flex;
     justify-content: center;
-    margin-bottom: 36px;
+    margin-bottom: 3px;
+    margin-top: 3px;
     padding: 0;
 }
 
