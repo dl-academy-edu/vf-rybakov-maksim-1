@@ -114,6 +114,9 @@
         align-items: center;
         text-align: center;
     }
+    .popup-button-link:hover {
+        background-color: #C29974;
+    }
     
     .slider-benefits {
         margin: 0;
@@ -169,11 +172,11 @@
         color: #FFFFFF;
         width: 192px;
     }
-    .category-card-title:hover {
+    .category-card:hover .category-card-title {
         text-decoration: underline;
     }
     
-    .first-card-block {
+    .category-card:nth-child(1) {
         width: 280px;
         background-color: #DBE4DB;
         background-image: url(/images/apparel-kids.png);
@@ -181,7 +184,7 @@
         background-position: center center;
     }
     
-    .second-card-block {
+    .category-card:nth-child(2) {
         width: 280px;
         background-color: #EADDD3;
         background-image: url(/images/holiday-shop.png);
@@ -189,7 +192,7 @@
         background-position: center center
     }
     
-    .third-card-block {
+    .category-card:nth-child(3) {
         width: 280px;
         background-color: #f8dae3;
         background-image: url(/images/toys.png);
@@ -197,7 +200,7 @@
         background-position: center center
     }
     
-    .fourth-card-block {
+    .category-card:nth-child(4) {
         width: 280px;
         background-color: #D5D4E1;
         background-image: url(/images/accessories.png);
@@ -262,17 +265,31 @@
     
     .active-service-list {
         margin-right: 214px;
-        margin-bottom: 11px;
+        margin-bottom: 0;
         padding-top: 11px;
         padding-bottom: 11px;
         padding-left: 60px;
         font-weight: bold;
-        background-color: rgba(112, 187, 220, 0.2);;
+        background-color: rgba(112, 187, 220, 0.2);
     }
 
     .hidden-service-list {
-        margin-left: 60px;
-        margin-bottom: 22px;
+        margin-left: 0;
+        margin-bottom: 0;
+        padding-top: 11px;
+        padding-bottom: 11px;
+        padding-left: 60px;
+    }
+    .hidden-service-list:hover {
+        margin-left: 0;
+        margin-right: 214px;
+        margin-bottom: 0px;
+        margin-top: 0;
+        padding-top: 11px;
+        padding-bottom: 11px;
+        padding-left: 60px;
+        font-weight: bold;
+        background-color: rgba(112, 187, 220, 0.2);
     }
 
     .services-description {
@@ -328,7 +345,7 @@
         position: relative;
         padding-top: 31px;
         padding-left: 30px;
-        padding-bottom: 82px;
+        padding-bottom: 62px;
         background-color: #E1F0F7;;
     }
 
@@ -359,11 +376,10 @@
         margin: 0;
         margin-top: 10px;
         margin-bottom: 20px;
+        padding-bottom: 20px;
     }
 
     .about-us-button {
-        display: block;
-        margin-right: 390px;
         padding: 9px 22px;
     }
 

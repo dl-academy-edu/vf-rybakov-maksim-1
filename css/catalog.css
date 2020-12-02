@@ -45,11 +45,12 @@
     color: #FFFFFF;
     width: 192px;
 }
-.category-card-title:hover {
+.category-card:hover .category-card-title {
     text-decoration: underline;
+    cursor: pointer;
 }
 
-.first-card-block {
+.category-card:nth-child(1) {
     width: 280px;
     background-color: #DBE4DB;
     background-image: url(/images/apparel-kids.png);
@@ -57,7 +58,7 @@
     background-position: center center;
 }
 
-.second-card-block {
+.category-card:nth-child(2) {
     width: 280px;
     background-color: #EADDD3;
     background-image: url(/images/holiday-shop.png);
@@ -65,7 +66,7 @@
     background-position: center center
 }
 
-.third-card-block {
+.category-card:nth-child(3) {
     width: 280px;
     background-color: #f8dae3;
     background-image: url(/images/toys.png);
@@ -73,7 +74,7 @@
     background-position: center center
 }
 
-.fourth-card-block {
+.category-card:nth-child(4) {
     width: 280px;
     background-color: #D5D4E1;
     background-image: url(/images/accessories.png);
@@ -81,7 +82,7 @@
     background-position: center center
 }
 
-.fifth-card-block {
+.category-card:nth-child(5) {
     width: 280px;
     background-color: #F3D0DB;
     background-image: url(/images/pink-flamingo.png);
@@ -89,7 +90,7 @@
     background-position: center center
 }
 
-.sixth-card-block {
+.category-card:nth-child(6) {
     width: 280px;
     background-color: #E5EAF8;
     background-image: url(/images/pink-shirt.png);

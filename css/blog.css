@@ -40,7 +40,7 @@
     text-decoration: none;
     color: #1E0606;
 }
-.blog-card-title:hover {
+.blog-card:hover .blog-card-title {
     text-decoration: underline;
 }
 
@@ -65,12 +65,27 @@
     border: none;
     background: none;
 }
+.pagination-control:hover path {
+    fill: #C29974;
+}
 
 .blog-card-pagination {
     display: flex;
     justify-content: center;
     margin-bottom: 36px;
     padding: 0;
+}
+
+.transform {
+    transform: rotate(180deg);
+}
+
+.blog-number-active {
+    color: #C29974;
+}
+
+.blog-number-inactive {
+    color: #1E0606;
 }
 
 .blog-number {
@@ -85,11 +100,8 @@
     background: none;
     width: 74px;
 }
-
-.blog-number-active {
-    color: #C29974;
-}
-
-.blog-number-inactive {
+.blog-number:hover {
     color: #1E0606;
+    opacity: 0.5;
+    cursor: pointer;
 }

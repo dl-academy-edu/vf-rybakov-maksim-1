@@ -9,6 +9,7 @@
 .details-goods {
     display: flex;
     align-items: flex-start;
+    flex-wrap: wrap;
 }
 
 .form-cost-wrapper {
@@ -145,6 +146,10 @@
     padding-left: 28px;
     margin-right: 33px;
 }
+.color-checkbox-label:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
 
 .color-checkbox-label::before {
     content: '';
@@ -192,6 +197,10 @@
     position: relative;
     padding-left: 28px;
     margin-right: 33px;
+}
+.delivery-radio-label:hover {
+    text-decoration: underline;
+    cursor: pointer;
 }
 
 .delivery-radio-label::before {
@@ -249,33 +258,21 @@
 .amount-radio-label {
     position: relative;
     display: block;
+    min-height: 33px;
     padding: 0 auto;
+    padding-top: 7px;
     margin: 0 auto;
-}
-
-.amount-radio-label::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 80px;
-    height: 35px;
+    text-align: center;
     background-color: #FFFFFF;
 }
-
-.amount-radio-label::after {
-    content: '';
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    width: 80px;
-    height: 35px;
-    background-color: #F3D0DB;
-    opacity: 0;
+.amount-radio-label:hover {
+    background-color: #EDDEEB;
+    color: #877379;
+    cursor: pointer;
 }
 
-.amount-radio-input:checked+.amount-radio-label::after {
-    opacity: 1;
+.amount-radio-input:checked+.amount-radio-label {
+    background-color: #F3D0DB;
 }
 
 .visuali-label {
@@ -316,11 +313,32 @@
 
 .user-attention {
     position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0px;
+    overflow: hidden;
+}
+.goods-card:hover .user-attention {
+    position: absolute;
     top: 20px;
     left: 50%;
     width: 207px;
     height: 207px;
+    margin-left: -104px;
+    margin-top: 89px;
+    padding-top: 82px;
     background-color: #E5EAF8;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 29px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #1E0606;
+    opacity: 0.9;
+    cursor: pointer;
 }
 
 .goods-description {
@@ -351,6 +369,9 @@
     border: none;
     background: none;
 }
+.pagination-control:hover path {
+    fill: #C29974;
+}
 
 .blog-card-pagination {
     display: flex;
@@ -358,6 +379,18 @@
     margin-bottom: 3px;
     margin-top: 3px;
     padding: 0;
+}
+
+.transform {
+    transform: rotate(180deg);
+}
+
+.blog-number-active {
+    color: #C29974;
+}
+
+.blog-number-inactive {
+    color: #1E0606;
 }
 
 .blog-number {
@@ -372,11 +405,10 @@
     background: none;
     width: 74px;
 }
-
-.blog-number-active {
-    color: #C29974;
-}
-
-.blog-number-inactive {
+.blog-number:hover {
     color: #1E0606;
+    opacity: 0.5;
+    cursor: pointer;
 }
+
+

@@ -25,8 +25,8 @@ window.addEventListener('keydown', function(evt) {
 
 popupContact.addEventListener('click', function(evt) {
     if (evt.target === popupContact ) {
-        popupContact.classList.remove('.open');
-        popupButton.focus();
+        popupContact.classList.remove('open')
         document.body.style.overflow = 'initial';
+        popupButton.focus()
     }
 })
