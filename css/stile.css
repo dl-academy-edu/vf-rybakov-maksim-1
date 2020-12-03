@@ -38,6 +38,12 @@ body {
     border: 0;
     cursor: pointer;
 }
+.button:hover {
+    background-color: #C29974;
+}
+.button:active {
+    background-color: #CFAF91;
+}
 
 ul {
     list-style: none;
@@ -73,6 +79,9 @@ ul {
 .index-link:hover {
     opacity: 50%;
 }
+.index-link:active {
+    opacity: 20%;
+}
 
 .header-nav-list {
     display: flex;
@@ -101,6 +110,9 @@ ul {
 .nav-link:hover {
     opacity: 50%;
 }
+.nav-link:active {
+    opacity: 20%;
+}
 
 
 .button-search {
@@ -117,6 +129,9 @@ ul {
 .header-search:hover {
     opacity: 50%;
 }
+.header-search:active {
+    opacity: 20%;
+}
 
 .button-contact {
     font-weight: bold;
@@ -128,6 +143,9 @@ ul {
 }
 .button-contact:hover {
     opacity: 50%;
+}
+.button-contact:active {
+    opacity: 20%;
 }
 
 /*top main*/
@@ -160,6 +178,14 @@ ul {
     line-height: 25px;
     color: #1E0606;
 }
+.breadcrumbs-page-inactive:hover {
+    opacity: 50%;
+}
+.breadcrumbs-page-inactive:active {
+    opacity: 20%;
+}
+
+
 .breadcrumbs-block a {
     text-decoration: none;
 }
@@ -181,6 +207,67 @@ ul {
     color: #1E0606;
     opacity: 0.5;
 }
+
+/*pagination block*/
+
+.pagination-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-right: 3px;
+    margin-left: 3px;
+    margin-bottom: 60px;
+}
+
+.pagination-control {
+    border: none;
+    background: none;
+}
+.pagination-control:hover path {
+    fill: #C29974;
+}
+.pagination-control:active path {
+    opacity: 50%;
+}
+
+.blog-card-pagination {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3px;
+    margin-top: 3px;
+    padding: 0;
+}
+
+.transform {
+    transform: rotate(180deg);
+}
+
+.blog-number-active {
+    color: #C29974;
+}
+
+.blog-number-inactive {
+    color: #1E0606;
+}
+
+.blog-number {
+    font-family: Montserrat;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 0;
+    border: 0;
+    background: none;
+    width: 74px;
+}
+.blog-number:hover {
+    color: #1E0606;
+    opacity: 0.5;
+    cursor: pointer;
+}
+
 
 /*Footer*/
 
@@ -208,7 +295,12 @@ ul {
     padding-bottom: 23px;
     border-style: solid;
     border-width: 0 0 1px 0;
-    border-color: #666666;;
+    border-color: #666666;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
     color: #AAAAAA;
 }
 
@@ -222,6 +314,10 @@ ul {
 .footer-column-item:hover {
     opacity: 50%;
 }
+.footer-column-item:active {
+    opacity: 20%;
+}
+
 .footer-item-link {
     color: #FFFFFF;
     text-decoration: none;
@@ -242,13 +338,15 @@ ul {
 }
 
 .join-user-email {
+    width: 300px;
     padding: 9px 98px 9px 15px;
     border: none;
     color: #EBEBEB;
     background-color: #666666;
     border: 1px solid #666666;
 }
-.join-user-email:hover {
+.join-user-email:hover,
+.join-user-email:active {
     border: 1px solid #FFFDFD;
 }
 .join-user-email::placeholder {
@@ -263,7 +361,7 @@ ul {
 .button-subscribe {
     position: absolute;
     top: 0;
-    right: 41px;
+    right: 0;
     padding: 9px 22px;
     font-family: Open Sans;
     font-style: normal;
@@ -302,6 +400,9 @@ ul {
 .social-logo:hover .svg-icon {
     opacity: 50%;
 }
+.social-logo:active .svg-icon {
+    opacity: 20%;
+}
 
 /*footer-bottom-area*/
 
@@ -330,7 +431,8 @@ ul {
 .rating-legend {
     position: absolute;
     top: -3px;
-    left: 0;
+    left: -148px;
+    width: 150px;
     margin-bottom: 0;
     padding: 0;
 }
@@ -342,13 +444,14 @@ ul {
 /*Footer-rating-group*/
 
 .rating-group-wrapper {
-    margin-left: 150px;
+    
 }
 
 .rating-group {
     position: relative;
     width: 100px;
     height: 15px;
+    margin-left: 150px;
     background-image: url(/images/Star.svg);
     background-size:  20px 14px;
     background-repeat: repeat-x;
@@ -369,8 +472,13 @@ ul {
     background-repeat: repeat-x;
 }
 
-.rating-star:checked,
+
 .rating-star:hover {
+    background-image: url(/images/Star-hover.svg);
+    background-color: #434343;
+    cursor: pointer;
+}
+.rating-star:checked {
     background-image: url(/images/Star-active.svg);
     background-color: #434343;
     cursor: pointer;
@@ -379,6 +487,9 @@ ul {
 .rating-star:hover ~ .rating-star {
     background-image: url(/images/Star.svg);
     background-color: #434343;
+}
+.rating-star:checked ~ .rating-legend {
+    color: #C29974;
 }
 
 .rating-star:focus {
@@ -409,8 +520,6 @@ ul {
     width: 100px;
 }
 
-/****/
-
 .footer-bottom-item {
     display: block;
     width: 390px;
@@ -431,7 +540,8 @@ ul {
     color: #A2A2A2;
 }
 
-.footer-and-text:hover {
+.footer-and-text:hover,
+.footer-and-text:active {
     margin: 0;
     text-decoration-line: underline;
     color: #FFFFFF;

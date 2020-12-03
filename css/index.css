@@ -1,37 +1,24 @@
     /*slider*/
 
-    .slider {
-        padding: 89px 110px 0 110px;
-    }
+
+
     
-    .slider-wrapper {
+    .slider {
         position: relative;
-        margin-top: 0;
-        padding: 0;
-        padding-top: 0;
-        background-color: #EEE4DB;
+        padding-top: 89px;
     }
 
     .slider-image {
         position: absolute;
-        right: 100px;
-        bottom: 0;
-    }
-
-    /**.slider-wrapper-padding {
-        padding-top: 89px;
-    }**/
-
-    .slider-information-wrapper {
-        display: flex;
-        padding-top: 0px;
-        padding-bottom: 89px;
-        background-color: #EEE4DB;
+        right: 210px;
+        bottom: 37px;
     }
 
     .slider-information {
         display: flex;
+        flex-wrap: wrap;
         margin-top: 0px;
+        background-color: #EEE4DB;
     }
 
     .slider-pagination {
@@ -82,11 +69,13 @@
     .slider-description {
         margin: 89px 5px 0 0;
         padding-bottom: 89px;
+        max-width: 307px;
     }
 
     .slider-title {
         margin: 0;
-        width: 307px;
+        
+        
         font-family: Montserrat;
         font-style: normal;
         font-weight: bold;
@@ -114,9 +103,6 @@
         align-items: center;
         text-align: center;
     }
-    .popup-button-link:hover {
-        background-color: #C29974;
-    }
     
     .slider-benefits {
         margin: 0;
@@ -129,6 +115,8 @@
         background-color: #C29974;
         text-align: center;
     }
+
+    
     
         /*Category products*/
     
@@ -152,11 +140,20 @@
     }
 
     .category-card {
+        position: relative;
         display: flex;
         align-items: center;
         min-height: 270px;
         margin-bottom: 20px;
         margin-right: 20px;
+    }
+
+    .category-card-link {
+        position: absolute;
+        display: flex;
+        width: 100%;
+        height: 100%;
+        text-decoration: none;
     }
     
     .category-card-title {
@@ -173,6 +170,10 @@
         width: 192px;
     }
     .category-card:hover .category-card-title {
+        text-decoration: underline;
+        cursor: pointer;
+    }
+    .category-card:active .category-card-title {
         text-decoration: underline;
     }
     
@@ -218,7 +219,13 @@
         width: 37px;
         height: 37px;
         border: 0;
-        background-color: rgba(112, 187, 220, 0.2);;
+        background-color: rgba(112, 187, 220, 0.2);
+    }
+    .category-pagination-control:hover {
+        opacity: 70%;
+    }
+    .category-pagination-control:active {
+        opacity: 50%;
     }
 
     .category-pagination-img {
@@ -236,6 +243,7 @@
     
         .services {
             display: flex;
+            flex-wrap: wrap;
             margin-top: 90px;
         }
     
@@ -244,6 +252,7 @@
         }
 
         .right-service-block {
+            width: 540px;
             margin-right: 100px;
         }
 
@@ -261,6 +270,9 @@
         font-size: 26px;
         line-height: 32px;
         color: #1E0606;
+    }
+    .service-list:hover {
+        cursor: pointer;
     }
     
     .active-service-list {
@@ -315,6 +327,13 @@
         padding: 0;
         align-items: center;
         justify-content: space-between;
+    }
+
+    .pertner-name:hover {
+        opacity: 70%;
+    }
+    .pertner-name:active {
+        opacity: 50%;
     }
     
         /*About us*/

@@ -18,7 +18,7 @@
             <ul class="header-nav-list">
                 <li class="header-nav-link"><a class="nav-link" href="/pages/blog.html">Blog</a></li>
                 <li class="header-nav-link"><a class="nav-link" href="/pages/catalog.html">Catalog</a></li>
-                <li class="header-nav-link"><a class="nav-link" href="#">About us</a></li>
+                <li class="header-nav-link"><a class="nav-link" href="/pages/toys.html">Toys</a></li>
             </ul>
         </nav>
         <button class="button-search" type="button">
@@ -29,50 +29,52 @@
     <main>
         <h1 class="home-page-title visually-hidden">DLC shop</h1>
     <section class="slider container">
-        <div class="slider-wrapper">
-            <img class="slider-image" src="/images/toy-in-trolley.png" alt="toy in trolley" width="635" height="461">
-        <!--<div class="slider-information-wrapper">-->
-                <div class="slider-information">
-                    <div class="slider-pagination">
-                        <p class="slider-page-number">01</p>
-                        <ul class="slider-page-buttons">
-                            <li class="slider-page"><button class="button slider-active-page" type="button"></button></li>
-                            <li class="slider-page"><button class="button slider-hidden-page" type="button"></button></li>
-                            <li class="slider-page"><button class="button slider-hidden-page" type="button"></button></li>
-                            <li class="slider-page"><button class="button slider-hidden-page" type="button"></button></li>
-                        </ul>
-                    </div>
-                    <div class="slider-description">
-                        <h2 class="slider-title">The ooh noo collection</h2>
-                        <p class="slider-description-article">Designed in Slovenia</p>
-                        <a class="button popup-button-link" href="#popup">Explore now</a>
-                    </div>
-                </div>
-        <!--</div>-->
+        <div class="slider-information">
+            <div class="slider-pagination">
+                <p class="slider-page-number">01</p>
+                <ul class="slider-page-buttons">
+                    <li class="slider-page"><button class="button slider-active-page" type="button"></button></li>
+                    <li class="slider-page"><button class="button slider-hidden-page" type="button"></button></li>
+                    <li class="slider-page"><button class="button slider-hidden-page" type="button"></button></li>
+                    <li class="slider-page"><button class="button slider-hidden-page" type="button"></button></li>
+                </ul>
+            </div>
+            <div class="slider-description">
+                <h2 class="slider-title">The ooh noo collection</h2>
+                <p class="slider-description-article">Designed in Slovenia</p>
+                <a class="button popup-button-link" href="#popup">Explore now</a>
+            </div>
         </div>
-        <div class="slider-benefits-wrapper">
-            <p class="slider-benefits">Free (continental) USA shipping on all orders of $100 USD or more!</p>
-        </div>
+        <img class="slider-image" src="/images/toy-in-trolley.png" alt="toy in trolley" width="635" height="461">
+        <p class="slider-benefits">Free (continental) USA shipping on all orders of $100 USD or more!</p>
     </section>
     <section class="category-products container">
         <h2 class="block-title category-title">Category products</h2>
         <ul class="category-list">
             <li class="category-card">
-                <a class="category-card-title" href="#">Apparel kids</a>
+                <a class="category-card-link" href="#">
+                    <p class="category-card-title" >Apparel kids</p>
+                </a>
             </li>
             <li class="category-card">
-                <a class="category-card-title" href="#">Holiday shop</a>
+                <a class="category-card-link" href="#">
+                    <p class="category-card-title" >Holiday shop</p>
+                </a>
             </li>
             <li class="category-card">
-                <a class="category-card-title" href="/pages/toys.html">Toys</a>
+                <a class="category-card-link" href="/pages/toys.html">
+                    <p class="category-card-title" >Toys</p>
+                </a>
             </li>
             <li class="category-card">
-                <a class="category-card-title" href="#">Accessories</a>
+                <a class="category-card-link" href="#">
+                    <p class="category-card-title" >Accessories</p>
+                </a>
             </li>
         </ul>
         <div class="category-pagination">
-            <button class="button category-pagination-control" type="button"><img class="category-pagination-img" src="/images/left-vector.png" alt="left vector" width="13" height="26"></button>
-            <button class="button category-pagination-control" type="button"><img class="category-pagination-img" src="/images/right-vector.png" alt="right vector" width="13" height="26"></button>
+            <button class="category-pagination-control" type="button"><img class="category-pagination-img" src="/images/left-vector.png" alt="left vector" width="13" height="26"></button>
+            <button class="category-pagination-control" type="button"><img class="category-pagination-img" src="/images/right-vector.png" alt="right vector" width="13" height="26"></button>
             <p class="category-pagination-description">Modern finds for the modern home. Curated goods by unique designers around the world from fashion to furniture for kids and adults.</p>
         </div>
     </section>
@@ -201,15 +203,13 @@
             <ul class="footer-bottom">
                 <li class="footer-bottom-item">
                     <fieldset class="rating">
-                        <legend class="rating-legend">Company Rating</legend>
-                        <div class="rating-group-wrapper">
-                            <div class="rating-group">
-                                <input class="rating-star" type="radio" name="star" value="1" aria-label="awful">
-                                <input class="rating-star" type="radio" name="star" value="2" aria-label="passably">
-                                <input class="rating-star" type="radio" name="star" value="3" aria-label="fine">
-                                <input class="rating-star" type="radio" name="star" value="4" aria-label="OK">
-                                <input class="rating-star" type="radio" name="star" value="5" aria-label="excellent">    
-                            </div>
+                        <div class="rating-group">
+                            <input class="rating-star" type="radio" name="star" value="1" aria-label="awful">
+                            <input class="rating-star" type="radio" name="star" value="2" aria-label="passably">
+                            <input class="rating-star" type="radio" name="star" value="3" aria-label="fine">
+                            <input class="rating-star" type="radio" name="star" value="4" aria-label="OK">
+                            <input class="rating-star" type="radio" name="star" value="5" aria-label="excellent">    
+                            <legend class="rating-legend">Company Rating</legend>
                         </div>
                     </fieldset>
                 </li>

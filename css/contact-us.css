@@ -34,6 +34,9 @@
 
 .contact-user-name {
     width: 600px;
+}
+
+.label-wrapper input {
     font-size: 18px;
     line-height: 25px;
     color: #1E0606;
@@ -132,6 +135,14 @@
         background-image: url('/images/index-checkbox.png');
         background-repeat: no-repeat;
         background-color: #E5EAF8;
+    }
+    .contact-user-processing:focus + .contact-form-processing::after,
+    .contact-user-processing:hover + .contact-form-processing::after  {
+        border: 2px solid rgba(255, 182, 18, 0.5);
+    }
+
+    .contact-form-processing:hover {
+        cursor: pointer;
     }
 
     .contact-subscribe {

@@ -306,9 +306,17 @@
 
 .goods-card {
     position: relative;
+    width: 380px;
     margin-right: 20px;
     padding-top: 10px;
     padding-bottom: 10px;
+}
+
+.goods-link {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
 }
 
 .user-attention {
@@ -319,7 +327,7 @@
     padding: 0px;
     overflow: hidden;
 }
-.goods-card:hover .user-attention {
+.goods-link:hover .user-attention {
     position: absolute;
     top: 20px;
     left: 50%;
@@ -340,6 +348,9 @@
     opacity: 0.9;
     cursor: pointer;
 }
+.goods-link:active .user-attention {
+    opacity: 0.67;
+}
 
 .goods-description {
     font-size: 14px;
@@ -356,7 +367,7 @@
 
 /*pagination block*/
 
-.pagination-wrapper {
+/*.pagination-wrapper {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
@@ -371,6 +382,9 @@
 }
 .pagination-control:hover path {
     fill: #C29974;
+}
+.pagination-control:active path {
+    opacity: 50%;
 }
 
 .blog-card-pagination {
@@ -409,6 +423,6 @@
     color: #1E0606;
     opacity: 0.5;
     cursor: pointer;
-}
+}*/
 
 

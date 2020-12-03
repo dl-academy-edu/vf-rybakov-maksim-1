@@ -78,6 +78,13 @@
 
 .index-user-name {
     width: 600px;
+    
+}
+
+.label-wrapper input {
+    font-size: 18px;
+    line-height: 25px;
+    color: #1E0606;
 }
 
 .label-wrapper input {
@@ -131,17 +138,6 @@
         line-height: 16px;
         color: #1E0606;
     }
-    .index-popup-consent:hover {
-        position: relative;
-        margin: 0;
-        padding-top: 2px;
-        padding-left: 34px;
-        font-family: Roboto;
-        font-size: 14px;
-        line-height: 16px;
-        color: #1E0606;
-        cursor: pointer;
-    }
 
     .index-popup-consent::before {
         content: '';
@@ -172,6 +168,15 @@
         background-image: url('/images/index-checkbox.png');
         background-repeat: no-repeat;
         background-color: #E5EAF8;
+    }
+
+    .index-user-consent:focus + .index-popup-consent::after,
+    .index-user-consent:hover + .index-popup-consent::after  {
+        border: 2px solid red;
+    }
+
+    .index-popup-consent:hover {
+        cursor: pointer;
     }
 
     .popup-subscribe {
