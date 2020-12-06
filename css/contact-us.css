@@ -70,10 +70,9 @@
 
 .label-wrapper input:hover {
     display: block;
-    margin-top: 3px;
     margin-bottom: 20px;
     border: 1px solid rgba(0, 0, 0, 0.3);
-    padding: 14px 20px 11px 20px;
+    padding: 14px 20px 10px 20px;
     min-height: 50px;
 }
 

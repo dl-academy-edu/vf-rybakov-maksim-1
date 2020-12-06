@@ -119,6 +119,16 @@
 }
 
 
+.range input[type=range]::-webkit-slider-thumb:focus {
+    border: 2px solid #836E5B;
+}
+.range input[type=range]::-webkit-slider-thumb:hover ~ .cost-input-focus {
+    color: #836E5B;
+    font-size: 18px;
+    line-height: 25px;
+}
+
+
 .range input::-moz-range-thumb{
     -webkit-appearance: none;
     width: 24px;
@@ -188,7 +198,8 @@
     background-repeat: no-repeat;
     background-color: #FFFFFF;
 }
-.color-checkbox-input:hover + .color-checkbox-label::after {
+.color-checkbox-input:hover + .color-checkbox-label::after, 
+.color-checkbox-input:focus + .color-checkbox-label::after {
     border: 2px solid #836E5B;
 }
 
