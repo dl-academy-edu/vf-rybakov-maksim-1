@@ -70,7 +70,7 @@
 .input-label {
     display: block;
     margin-bottom: 6px;
-    font-family: Roboto;
+    font-family: 'Roboto';
     font-size: 14px;
     line-height: 16px;
     color: #1E0606;
@@ -132,7 +132,7 @@
         margin: 0;
         padding-top: 2px;
         padding-left: 34px;
-        font-family: Roboto;
+        font-family: 'Roboto';
         font-size: 14px;
         line-height: 16px;
         color: #1E0606;

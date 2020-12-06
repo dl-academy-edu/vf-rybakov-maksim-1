@@ -2,7 +2,7 @@
 
 body {
     margin: 0;
-    font-family: 'Open Sans', Arial, sans-serif;
+    font-family: 'Open Sans', 'Arial', 'sans-serif';
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
@@ -155,7 +155,7 @@ ul {
 .page-title {
     margin-bottom: 0;
     padding-top: 16px;
-    font-family: Montserrat;
+    font-family: 'Montserrat';
     font-weight: bold;
     font-size: 40px;
     line-height: 49px;
@@ -175,7 +175,7 @@ ul {
     position: relative;
     margin: 0;
     margin-right: 48px;
-    font-family: Crimson Text;
+    font-family: 'Crimson Text';
     font-style: italic;
     font-size: 20px;
     line-height: 25px;
@@ -203,7 +203,7 @@ ul {
 
 .breadcrumbs-active-page {
     margin: 0;
-    font-family: Crimson Text;
+    font-family: 'Crimson Text';
     font-style: italic;
     font-size: 20px;
     line-height: 25px;
@@ -261,7 +261,7 @@ ul {
 }
 
 .blog-number {
-    font-family: Montserrat;
+    font-family: 'Montserrat';
     font-weight: bold;
     font-size: 16px;
     line-height: 20px;
@@ -308,7 +308,7 @@ ul {
     border-style: solid;
     border-width: 0 0 1px 0;
     border-color: #666666;
-    font-family: Open Sans;
+    font-family: 'Open Sans';
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
@@ -323,7 +323,7 @@ ul {
 
 .footer-column-item {
     margin-bottom: 16px;
-    font-family: Open Sans;
+    font-family: 'Open Sans';
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
@@ -370,7 +370,7 @@ ul {
     border: 1px solid #FFFDFD;
 }
 .join-user-email::placeholder {
-    font-family: Open Sans;
+    font-family: 'Open Sans';
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
@@ -384,7 +384,7 @@ ul {
     right: 0;
     width: 81px;
     padding: 9px 22px;
-    font-family: Open Sans;
+    font-family: 'Open Sans';
     font-style: normal;
     font-weight: bold;
     font-size: 16px;

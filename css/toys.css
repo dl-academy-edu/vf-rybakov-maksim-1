@@ -62,7 +62,7 @@
 
 .field .value{
     position: absolute;
-    font-family: Open Sans;
+    font-family: 'Open Sans';
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
@@ -83,7 +83,7 @@
     position: absolute;
     top: -47px;
     left: 0;
-    font-family: Open Sans;
+    font-family: 'Open Sans';
     font-style: normal;
     font-weight: normal;
     font-weight: bold;
@@ -386,7 +386,7 @@
     margin-top: 89px;
     padding-top: 82px;
     background-color: #E5EAF8;
-    font-family: Montserrat;
+    font-family: 'Montserrat';
     font-style: normal;
     font-weight: bold;
     font-size: 26px;
@@ -413,5 +413,3 @@
     font-weight: bold;
     text-align: center;
 }
-
-

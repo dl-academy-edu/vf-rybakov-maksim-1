@@ -44,7 +44,7 @@
 .category-card-title {
     display: block;
     margin: auto;
-    font-family: Montserrat;
+    font-family: 'Montserrat';
     font-weight: bold;
     font-size: 26px;
     line-height: 32px;
@@ -121,7 +121,7 @@
     margin: 0;
     margin-top: 35px;
     padding-bottom: 10px;
-    font-family: Montserrat;
+    font-family: 'Montserrat';
     font-weight: bold;
     font-size: 38px;
     line-height: 46px;
