@@ -1,5 +1,14 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 
 .contact-main {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     margin-top: 50px;
     margin-bottom: 59px;
@@ -27,13 +36,18 @@
 }
 
 .contact-form-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
 }
 
 .contact-input-title {
-    font-family: 'Open Sans';
+    font-family: 'Open Sans', 'Arial', 'sans-serif';
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
@@ -51,8 +65,44 @@
     color: #1E0606;
 }
 
+.contact-user-name::-webkit-input-placeholder {
+    font-family: 'Open Sans', 'Arial', 'sans-serif';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 25px;
+    color: #1E0606;
+}
+
+.contact-user-name::-moz-placeholder {
+    font-family: 'Open Sans', 'Arial', 'sans-serif';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 25px;
+    color: #1E0606;
+}
+
+.contact-user-name:-ms-input-placeholder {
+    font-family: 'Open Sans', 'Arial', 'sans-serif';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 25px;
+    color: #1E0606;
+}
+
+.contact-user-name::-ms-input-placeholder {
+    font-family: 'Open Sans', 'Arial', 'sans-serif';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 25px;
+    color: #1E0606;
+}
+
 .contact-user-name::placeholder {
-    font-family: 'Open Sans';
+    font-family: 'Open Sans', 'Arial', 'sans-serif';
     font-style: normal;
     font-weight: normal;
     font-size: 18px;
@@ -86,7 +136,8 @@
 
 .contact-user-message {
     width: 100%;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     margin-bottom: 11px;
     padding-top: 14px;
     padding-left: 20px;
@@ -97,7 +148,8 @@
 }
 .contact-user-message:hover {
     width: 100%;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     margin-bottom: 11px;
     border: 1px solid rgba(0, 0, 0, 0.3);
 }
@@ -107,7 +159,7 @@
         margin: 0;
         padding-top: 2px;
         padding-left: 34px;
-        font-family: 'Roboto';
+        font-family: 'Roboto', 'Arial', 'sans-serif';
         font-size: 14.8px;
         line-height: 16px;
         color: #1E0606;
@@ -121,7 +173,8 @@
         width: 19px;
         height: 19px;
         border: 2px solid #C29974;
-        box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+                box-sizing: border-box;
         border-radius: 3px;
     }
 
@@ -134,7 +187,8 @@
         width: 19px;
         height: 19px;
         border: 2px solid #C29974;
-        box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+                box-sizing: border-box;
         border-radius: 3px;
     }
 
@@ -172,7 +226,7 @@
 
 .form-description-slogan {
     margin-top: 20px;
-    font-family: 'Montserrat';
+    font-family: 'Montserrat', 'Arial', 'sans-serif';
     font-weight: 600;
     font-size: 26px;
     line-height: 34px;

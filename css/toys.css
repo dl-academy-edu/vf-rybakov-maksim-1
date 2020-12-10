@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 
 
 .goods-filter-form {
@@ -7,9 +14,14 @@
 }
 
 .details-goods {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: flex-start;
-    flex-wrap: wrap;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
 }
 
 .form-cost-wrapper {
@@ -53,16 +65,22 @@
 }
 
 .field{
-    display: flex;
-    align-items: center;
-    justify-content: center;
     position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     padding: 3px;
 }  
 
 .field .value{
     position: absolute;
-    font-family: 'Open Sans';
+    font-family: 'Open Sans', 'Arial', 'sans-serif';
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
@@ -79,18 +97,6 @@
     left: 178px;
 }
 
-.cost-title {  //див от Cost
-    position: absolute;
-    top: -47px;
-    left: 0;
-    font-family: 'Open Sans';
-    font-style: normal;
-    font-weight: normal;
-    font-weight: bold;
-    font-size: 16px;
-    line-height: 22px;
-    color: #1E0606;
-}
 
 .range input{
     -webkit-appearance: none;
@@ -119,14 +125,26 @@
 }
 
 
-.range input[type=range]::-webkit-slider-thumb:focus {
+.cost-input-focus {
+    position: absolute;
+    top: -10px;
+    left: -8px;
+    width: 220px;
+    height: 30px;
+    border-radius: 8px;
+    border: none;
+    z-index: -1;
+}
+.cost-range-input:focus ~ .cost-input-focus {
     border: 2px solid #836E5B;
 }
-.range input[type=range]::-webkit-slider-thumb:hover ~ .cost-input-focus {
-    color: #836E5B;
-    font-size: 18px;
-    line-height: 25px;
-}
+
+
+/*.cost-range-input:focus {
+    border: 2px solid #836E5B;
+    border-width: 30px;
+}*/
+
 
 
 .range input::-moz-range-thumb{
@@ -140,12 +158,6 @@
     background: #FFFFFF;
     cursor: pointer;
 }
-
-.range input::-moz-range-progress{
-    background: #C29974; //this progress background is only shown on Firefox
-}
-
-
 
 /**end range stile**/
 
@@ -175,7 +187,8 @@
     left: 0;
     top: 0;
     border: 2px solid #C29974;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     border-radius: 3px;
 }
 
@@ -188,7 +201,8 @@
     width: 19px;
     height: 19px;
     border: 2px solid #C29974;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     border-radius: 3px;
 }
 
@@ -263,24 +277,12 @@
     padding-bottom: 12px;
 }
 
-.delivery-input-focus {
-    position: absolute;
-    top: -9px;
-    left: -5px;
-    width: 29px;
-    height: 71px;
-    border-radius: 8px;
-    border: none;
-    z-index: -1;
-}
-.delivery-radio-input:focus ~ .delivery-input-focus {
-    border: 2px solid #836E5B;
-}
-
 /**radio style Amount**/
 
 .form-amount-list {
     position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     margin: 0;
     padding: 0;
@@ -290,38 +292,31 @@
     width: 80px;
 }
 
-.amount-input-focus {
-    position: absolute;
-    top: -6px;
-    left: -5px;
-    width: 250px;
-    height: 46px;
-    border-radius: 3px;
-    border: none;
-    z-index: -1;
-}
-.amount-radio-input:focus ~ .amount-input-focus {
-    border: 2px solid #836E5B;
-}
 
 .amount-radio-label {
     position: relative;
     display: block;
-    min-height: 33px;
-    padding: 0 auto;
-    padding-top: 7px;
+    min-height: 35px;
+    padding-top: 8px;
     margin: 0 auto;
     text-align: center;
     background-color: #FFFFFF;
+    border: 2px solid #FFFFFF;
 }
 .amount-radio-label:hover {
     background-color: #EDDEEB;
+    border: 2px solid #EDDEEB;
     color: #877379;
     cursor: pointer;
 }
 
+
 .amount-radio-input:checked+.amount-radio-label {
     background-color: #F3D0DB;
+    border: 2px solid #F3D0DB;
+}
+.amount-radio-input:focus ~ .amount-radio-label {
+    border: 2px solid #836E5B;
 }
 
 .visuali-label {
@@ -346,8 +341,11 @@
 }
 
 .goods-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     margin: 0;
     margin-right: -20px;
     padding: 0;
@@ -386,7 +384,7 @@
     margin-top: 89px;
     padding-top: 82px;
     background-color: #E5EAF8;
-    font-family: 'Montserrat';
+    font-family: 'Montserrat', 'Arial', 'sans-serif';
     font-style: normal;
     font-weight: bold;
     font-size: 26px;

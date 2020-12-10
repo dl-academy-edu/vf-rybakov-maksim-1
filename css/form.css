@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 
 /**Form stile**/
 
@@ -61,16 +68,21 @@
 }
 
 .popup-form-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     
 }
 
 .input-label {
     display: block;
     margin-bottom: 6px;
-    font-family: 'Roboto';
+    font-family: 'Roboto', 'Arial', 'sans-serif';
     font-size: 14px;
     line-height: 16px;
     color: #1E0606;
@@ -112,7 +124,8 @@
 
 .index-user-message {
     width: 100%;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     margin-bottom: 8px;
     padding-left: 20px;
     padding-top: 11px;
@@ -122,7 +135,8 @@
     }
 .index-user-message:hover {
     width: 100%;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     margin-bottom: 8px;
     border: 1px solid rgba(0, 0, 0, 0.3);
     }
@@ -132,7 +146,7 @@
         margin: 0;
         padding-top: 2px;
         padding-left: 34px;
-        font-family: 'Roboto';
+        font-family: 'Roboto', 'Arial', 'sans-serif';
         font-size: 14px;
         line-height: 16px;
         color: #1E0606;
@@ -146,7 +160,8 @@
         width: 19px;
         height: 19px;
         border: 2px solid #C29974;
-        box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+                box-sizing: border-box;
         border-radius: 3px;
     }
 
@@ -159,7 +174,8 @@
         width: 19px;
         height: 19px;
         border: 2px solid #C29974;
-        box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+                box-sizing: border-box;
         border-radius: 3px;
     }
 

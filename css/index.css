@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
     /*slider*/
 
 
@@ -11,8 +18,11 @@
 
     .slider-information {
         position: relative;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
         margin-top: 0px;
         background-color: #EEE4DB;
     }
@@ -30,7 +40,7 @@
     
         .slider-page-number {
         margin: 0;
-        font-family: 'Montserrat';
+        font-family: 'Montserrat', 'Arial', 'sans-serif';
         font-weight: 300;
         font-size: 60px;
         line-height: 73px;
@@ -77,7 +87,7 @@
 
     .slider-title {
         margin: 0;
-        font-family: 'Montserrat';
+        font-family: 'Montserrat', 'Arial', 'sans-serif';
         font-style: normal;
         font-weight: bold;
         font-size: 40px;
@@ -90,7 +100,7 @@
         margin-top: 15px;
         margin-bottom: 22px;
         width: 307px;
-        font-family: 'Crimson Text';
+        font-family: 'Crimson Text', 'Arial', 'sans-serif';
         font-style: italic;
         font-size: 20px;
         line-height: 25px;
@@ -102,7 +112,9 @@
         padding-top: 9px;
         padding-bottom: 9px;
         width: 161px;
-        align-items: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
         text-align: center;
     }
     
@@ -125,7 +137,7 @@
     .block-title {
         margin-top: 94px;
         margin-bottom: 30px;
-        font-family: 'Montserrat';
+        font-family: 'Montserrat', 'Arial', 'sans-serif';
         font-weight: bold;
         font-size: 38px;
         line-height: 46px;
@@ -134,8 +146,11 @@
     }
 
     .category-list {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
         margin: 0;
         padding: 0;
         margin-bottom: -20px;
@@ -144,8 +159,12 @@
 
     .category-card {
         position: relative;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        align-items: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
         min-height: 270px;
         margin-bottom: 20px;
         margin-right: 20px;
@@ -153,6 +172,8 @@
 
     .category-card-link {
         position: absolute;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
         width: 100%;
         height: 100%;
@@ -162,7 +183,7 @@
     .category-card-title {
         display: block;
         margin: auto;
-        font-family: 'Montserrat';
+        font-family: 'Montserrat', 'Arial', 'sans-serif';
         font-weight: bold;
         font-size: 26px;
         line-height: 32px;
@@ -217,6 +238,8 @@
     }
 
     .category-pagination {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
         margin-top: 33px;
     }
@@ -250,8 +273,11 @@
         /*Service block*/
     
         .services {
+            display: -webkit-box;
+            display: -ms-flexbox;
             display: flex;
-            flex-wrap: wrap;
+            -ms-flex-wrap: wrap;
+                flex-wrap: wrap;
             margin-top: 90px;
         }
     
@@ -274,11 +300,6 @@
         margin: 0;
         margin-bottom: 22px;
         padding: 0;
-        font-family: 'Crimson Text';
-        font-style: italic;
-        font-size: 25px;
-        line-height: 34px;
-        color: #1E0606;
     }
     .service-list:hover {
         cursor: pointer;
@@ -293,6 +314,7 @@
         font-weight: bold;
         background-color: rgba(112, 187, 220, 0.2);
     }
+
 
     .hidden-service-list {
         margin-left: 0;
@@ -315,6 +337,15 @@
         background-color: rgba(112, 187, 220, 0.2);
     }
 
+    .index-service-link {
+        font-family: 'Crimson Text', 'Arial', 'sans-serif';
+        font-style: italic;
+        font-size: 25px;
+        line-height: 34px;
+        color: #1E0606;
+        text-decoration: none;
+    }
+
     .services-description {
         margin-top: 8px;
         margin-left: 60px;
@@ -334,10 +365,18 @@
     }
 
     .partners-list {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
         padding: 0;
-        align-items: center;
-        justify-content: space-between;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
     }
 
     .pertner-name:hover {
@@ -350,6 +389,8 @@
         /*About us*/
     
     .about-us {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
         margin-top: 112px;
         margin-bottom: 150px;
@@ -388,7 +429,7 @@
         margin: 0px;
         margin-top: -58px;
         min-width: 543px;
-        font-family: 'Montserrat';
+        font-family: 'Montserrat', 'Arial', 'sans-serif';
         font-weight: bold;
         font-size: 38px;
         line-height: 46px;
@@ -400,7 +441,7 @@
         margin: 0;
         margin-top: 10px;
         margin-bottom: -8px;
-        font-family: 'Crimson Text';
+        font-family: 'Crimson Text', 'Arial', 'sans-serif';
         font-style: italic;
         font-weight: normal;
         font-size: 23px;
@@ -429,4 +470,3 @@
         bottom: -114px;
         left: 30px;
     }
-

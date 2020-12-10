@@ -39,7 +39,9 @@
                 <legend class="color-title details-block-title">Cost</legend>
                     <div class="range cost-range">
                         <div class="field">
-                            <input class="cost-range-input" type="range" min="0" max="500" value="100" step="50">
+                            <label for="cost-range" class="visually-hidden">Cost</label>
+                            <input id="cost-range" class="cost-range-input" type="range" min="0" max="500" value="100" step="50">
+                            <div class="cost-input-focus"></div>
                             <div class="value left">0</div>
                             <div class="value right">500</div>
                         </div>
@@ -72,12 +74,10 @@
                     <li class="radio-list">
                         <input id="radio-free" type="radio" name="delivery" value="no" class="visually-hidden delivery-radio-input">
                         <label for="radio-free" class="delivery-radio-label">Free shipping</label>
-                        <div class="delivery-input-focus"></div>
                     </li>
                     <li class="radio-list">
                         <input id="radio-fast" type="radio" name="delivery" value="yes" class="visually-hidden delivery-radio-input" checked>
                         <label for="radio-fast" class="delivery-radio-label">Fast shipping</label>
-                        <div class="delivery-input-focus"></div>
                     </li>
                 </ul>
             </fieldset>
@@ -219,11 +219,12 @@
                         </li>
                         <li class="column-connect-item">
                             <form name="user-subscribe-form" method="POST" action="https://echo.htmlacademy.ru">
-                            <input class="join-user-email" id="user-email"
-                                type="text"
-                                name="email"
-                                placeholder="Email">
-                            <button class="button button-subscribe" type="submit">join</button>
+                                <label for="user-subscribe-button" class="visually-hidden">Send email</label>
+                                <input id="user-subscribe-button" class="join-user-email" id="user-email"
+                                    type="text"
+                                    name="email"
+                                    placeholder="Email">
+                                <button class="button button-subscribe" type="submit">join</button>
                             </form>
                         </li>
                     </ul>
@@ -272,12 +273,23 @@
                 <li class="footer-bottom-item">
                     <fieldset class="rating">
                         <div class="rating-group">
-                            <label class="visually-hidden">Company rating</label>
-                            <input class="rating-star" type="radio" name="star" value="1" aria-label="awful">
-                            <input class="rating-star" type="radio" name="star" value="2" aria-label="passably">
-                            <input class="rating-star" type="radio" name="star" value="3" aria-label="fine">
-                            <input class="rating-star" type="radio" name="star" value="4" aria-label="OK">
-                            <input class="rating-star" type="radio" name="star" value="5" aria-label="excellent">    
+                            <h2 class="visually-hidden">Company rating</h2>
+
+                            <label for="rating-awful" class="visually-hidden">Awful</label>
+                            <input id="rating-awful" class="rating-star" type="radio" name="star" value="1">
+                            
+                            <label for="rating-passably" class="visually-hidden">Passably</label>
+                            <input id="rating-passably" class="rating-star" type="radio" name="star" value="2">
+
+                            <label for="rating-fine" class="visually-hidden">Fine</label>
+                            <input id="rating-fine" class="rating-star" type="radio" name="star" value="3">
+
+                            <label for="rating-ok" class="visually-hidden">OK</label>
+                            <input id="rating-ok" class="rating-star" type="radio" name="star" value="4">
+
+                            <label for="rating-excellent" class="visually-hidden">Excellent</label>
+                            <input id="rating-excellent" class="rating-star" type="radio" name="star" value="5">
+
                             <div class="rating-legend">Company rating</div>
                         </div>
                     </fieldset>
